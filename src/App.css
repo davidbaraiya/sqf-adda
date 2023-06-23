@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --nunito-font: 'Nunito Sans', sans-serif;
+  --poppins-font: 'Poppins', sans-serif;
+}
+
+p,
+h6,
+button {
+  font-family: var(--nunito-font) !important;
+}
+
+button {
+  font-size: 1.1rem !important;
+}
+
+h2,
+h4,
+h3 {
+  font-family: var(--poppins-font) !important;
+}
