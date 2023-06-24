@@ -26,17 +26,19 @@
   font-size: 2.75rem !important;
 }
 
-@media (992px <= width <= 1200px) {
+@media (992px <=width <=1200px) {
   .lg-font {
     font-size: 2.5rem !important;
   }
 }
-@media (768px <= width <= 992px) {
+
+@media (768px <=width <=992px) {
   .lg-font {
     font-size: 2.15rem !important;
   }
 }
-@media (0px <= width <= 768px) {
+
+@media (0px <=width <=768px) {
   .lg-font {
     font-size: 1.95rem !important;
   }
@@ -52,6 +54,7 @@
   font-size: var(--lg-sz);
   font-weight: 700;
 }
+
 .cont-head a {
   /* color: var(--bk-color) !important; */
   font-weight: 700;
@@ -77,24 +80,28 @@
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+
 .cont-adrs-card:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
 .cont-adrs-card img {
   width: 80px;
 }
+
 .cont-adrs-card h4 {
   color: var(--bk-color);
   font-size: var(--md-sz);
   font-weight: 700;
 }
+
 .cont-adrs-card div p {
   color: var(--bk-color);
   opacity: 0.6;
 }
 
-@media (0px <= width <= 768px) {
+@media (0px <=width <=768px) {
   .cont-head {
     display: flex;
     flex-direction: column;
@@ -129,25 +136,30 @@
   flex-direction: column;
   margin-top: 2rem;
 }
-.cont-form > div {
+
+.cont-form>div {
   display: flex;
   gap: 1.5rem;
 }
 
-.cont-form > div .MuiInputBase-root {
+.cont-form>div .MuiInputBase-root {
   border-radius: 0;
   height: 4rem;
 }
-.cont-form > div .Mui-focused .MuiOutlinedInput-notchedOutline {
+
+.cont-form>div .Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: var(--scnd-color);
   border-radius: 0;
 }
-.cont-form > div .MuiSvgIcon-root {
+
+.cont-form>div .MuiSvgIcon-root {
   color: var(--scnd-color);
 }
-.cont-form > div .MuiSelect-icon {
+
+.cont-form>div .MuiSelect-icon {
   display: none;
 }
+
 .cont-form textarea {
   border: 1px solid rgba(128, 128, 128, 0.383) !important;
   font-size: 1rem !important;
@@ -155,7 +167,8 @@
   font-weight: 400 !important;
   padding: 16.5px 14px;
 }
-.cont-form > div .MuiInputBase-input {
+
+.cont-form>div .MuiInputBase-input {
   border-radius: 0;
 }
 
@@ -167,10 +180,11 @@
   background-color: var(--sec-bg);
 }
 
-@media (0px <= width <= 768px) {
-  .cont-form > div {
+@media (0px <=width <=768px) {
+  .cont-form>div {
     flex-direction: column;
   }
+
   .cont-form-container {
     padding: 20px 25px 25px;
   }
