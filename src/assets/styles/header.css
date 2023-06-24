@@ -22,9 +22,13 @@
   --sec-bg-5: #ff5a3c;
 }
 
+.hdr-logo a {
+  display: inline-block;
+}
+
 .hdr-logo img {
-  width: 90px;
-  /* height: 100%; */
+  width: 200px;
+  height: 100%;
 }
 
 .static-header-desk {
@@ -197,6 +201,11 @@
 @media (0px <=width <=768px) {
   .lg-font {
     font-size: 1.95rem !important;
+  }
+
+  .hdr-logo img {
+    width: 160px;
+    height: 100%;
   }
 }
 
