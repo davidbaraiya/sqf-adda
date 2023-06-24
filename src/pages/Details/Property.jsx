@@ -23,7 +23,11 @@ const Property = () => {
           {propertyData.map((property, i) => {
             const flexDirection = i % 2 === 0 ? 'row-reverse' : 'row'
             return (
-              <Box key={i} sx={{ marginBottom: '4rem' }}>
+              <Box
+                key={i}
+                sx={{ marginBottom: '4rem' }}
+                className="property-div"
+              >
                 <Fade bottom>
                   <Typography variant="h4" color="#ff5a3c">
                     {`${i + 1}.${property.name}`}
