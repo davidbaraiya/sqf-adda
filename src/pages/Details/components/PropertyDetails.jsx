@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
   Box,
-  Button,
   Card,
   CardContent,
   CardMedia,
@@ -12,8 +11,6 @@ import {
   ListItemText,
   Typography,
 } from '@mui/material'
-import Header from '../../../components/common/Header'
-import Footer from '../../../components/common/Footer'
 import { useParams } from 'react-router-dom'
 import propertyData from '../propertyData'
 import { Fade } from 'react-reveal'
@@ -63,7 +60,6 @@ const PropertyDetails = () => {
 
   return (
     <>
-      <Header />
       <Box className="details-page">
         <Box pt={0} className="banner">
           <img src={thumbnail} alt="img" width={'100%'} loading="lazy" />
@@ -446,7 +442,6 @@ const PropertyDetails = () => {
           </section>
         )}
       </Box>
-      <Footer />
     </>
   )
 }

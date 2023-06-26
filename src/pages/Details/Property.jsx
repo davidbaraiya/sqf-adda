@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './property.css'
-import Footer from '../../components/common/Footer'
-import Header from '../../components/common/Header'
 import { Box, Container, Typography } from '@mui/material'
 import PropertyTop from './components/PropertyTop'
 import { Fade } from 'react-reveal'
 import PropertyCard from './components/PropertyCard'
 import propertyData from './propertyData'
-import { Padding } from '@mui/icons-material'
 
 const Property = () => {
   useEffect(() => {
@@ -16,7 +13,6 @@ const Property = () => {
 
   return (
     <Box>
-      <Header />
       <PropertyTop />
       <Box className="property-builders" sx={{ padding: '3rem 0 5rem 0' }}>
         <Container>
@@ -44,7 +40,6 @@ const Property = () => {
           })}
         </Container>
       </Box>
-      <Footer />
     </Box>
   )
 }

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Container, Grid, Typography } from '@mui/material'
-import Header from '../../../components/common/Header'
-import Footer from '../../../components/common/Footer'
 import { useParams } from 'react-router-dom'
 import { Fade } from 'react-reveal'
 import propertyData from '../propertyData'
@@ -19,7 +17,7 @@ const PropertySubDetails = () => {
   if (!viewDetails) {
     return (
       <Box
-      sx={{
+        sx={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -44,7 +42,6 @@ const PropertySubDetails = () => {
 
   return (
     <>
-      <Header />
       <Box className="details-page">
         <Box pt={0} className="banner">
           <img src={thumbnail} alt="img" width={'100%'} loading="lazy" />
@@ -223,7 +220,6 @@ const PropertySubDetails = () => {
           </section>
         )}
       </Box>
-      <Footer />
     </>
   )
 }

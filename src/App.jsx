@@ -6,11 +6,14 @@ import Home from './pages/Home/Home'
 import Property from './pages/Details/Property'
 import PropertyDetails from './pages/Details/components/PropertyDetails'
 import PropertySubDetails from './pages/Details/components/PropertySubDetails'
+import Header from './components/common/Header'
+import Footer from './components/common/Footer'
 
 function App() {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
@@ -26,6 +29,7 @@ function App() {
             element={<PropertySubDetails />}
           />
         </Routes>
+        <Footer />
       </Router>
     </>
   )

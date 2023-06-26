@@ -20,7 +20,7 @@ export default function Testimonial() {
               Our Testimonial
             </Typography>
             <Typography variant="h2" className="lg-font">
-              Clients Feedback
+              Clients <span class="highlight-text">Feedback</span>
             </Typography>
 
             <Box className="hm-ttl-swiper-seciton">

@@ -15,28 +15,24 @@ import {
 } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-// import logo2 from "../../assets/images/Adda.png";
 import logo2 from '../../assets/images/header-logo.png'
-// import logo from "../../assets/images/header-logo.png";
 import logo from '../../assets/images/logo-4.png'
 import '../../assets/styles/header.css'
 
 const Header = () => {
-  const [visibility, setVisibility] = useState('hidden')
+  const [stickyHeader, setStickyHeader] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset
 
       if (scrollPosition > 50) {
-        setVisibility('visible')
+        setStickyHeader(true)
       } else {
-        setVisibility('hidden')
+        setStickyHeader(false)
       }
     }
-
     window.addEventListener('scroll', handleScroll)
-
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
@@ -44,54 +40,11 @@ const Header = () => {
 
   return (
     <>
-      <AppBar className="hdr-appbar static-header-desk">
-        <Container>
-          <Toolbar className="hdr-toolbar">
-            <Box sx={{ flexGrow: 1 }} className="hdr-logo">
-              <Link to="/">
-                <img src={logo2} alt="" />
-              </Link>
-            </Box>
-            <Drawer />
-            <Box className="hdr-desk-navs">
-              <NavLink
-                className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/"
-              >
-                <Button className={`header-menu-btn`} variant="text">
-                  Home
-                </Button>
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/about"
-              >
-                <Button className={`header-menu-btn`} variant="text">
-                  About
-                </Button>
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/contact"
-              >
-                <Button className={`header-menu-btn`} variant="text">
-                  Contact
-                </Button>
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/property"
-              >
-                <Button className={`header-menu-btn`} variant="text">
-                  Property
-                </Button>
-              </NavLink>
-            </Box>
-            <Button className="hdr-add-listing-btn">Add Listing</Button>
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <AppBar style={{ visibility }} className="hdr-appbar sticky-header-desk">
+      <AppBar
+        className={`hdr-appbar ${
+          stickyHeader ? 'sticky-header-desk' : 'static-header-desk'
+        }`}
+      >
         <Container>
           <Toolbar className="hdr-toolbar">
             <Box sx={{ flexGrow: 1 }} className="hdr-logo">

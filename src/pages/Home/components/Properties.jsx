@@ -43,9 +43,10 @@ export default function Properties() {
             </Typography>
             {/* <Typography variant="h2" className='lg-font'>Latest Listings</Typography> */}
             <Typography variant="h2" className="lg-font">
-              Our Current Listings
+              Our Current <span className="highlight-text">Listings</span>
             </Typography>
-          </Fade>''
+          </Fade>
+          ''
           <Box className="hm-ppt-swiper-seciton">
             <Swiper
               slidesPerView={3}
@@ -113,7 +114,6 @@ export default function Properties() {
                         The Islands By Gaurs Landmark of Luxurious Living
                       </Typography>
                       <Typography>
-
                         Custom-made residences and lifestyle choices, in the
                         midst of the luxurious integrated township.
                       </Typography>

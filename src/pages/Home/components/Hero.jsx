@@ -32,7 +32,6 @@ const currencies = [
 
 export default function Hero() {
   const targetRef = useRef(null)
-  const [isVisible, setIsVisible] = useState(false)
   const [isStartVideo, setIsStartVideo] = useState(true)
 
   useEffect(() => {

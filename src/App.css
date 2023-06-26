@@ -20,3 +20,42 @@ h4,
 h3 {
   font-family: var(--poppins-font) !important;
 }
+
+.highlight-text {
+  display: inline-block;
+  color: #ff5a3c;
+}
+
+.lg-font {
+  text-transform: capitalize;
+}
+
+.hm-ttl-sub-container {
+  margin-bottom: 30px;
+}
+
+.img-grp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.img-wrapper1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.img-wrapper2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.img-wrapper3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.img-grp img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

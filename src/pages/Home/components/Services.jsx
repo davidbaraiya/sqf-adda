@@ -14,7 +14,7 @@ export default function Services() {
               Our Services
             </Typography>
             <Typography variant="h2" className="lg-font">
-              Our Realty Services
+              Our Realty <span className="highlight-text">Services</span>
             </Typography>
           </Fade>
 

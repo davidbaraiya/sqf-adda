@@ -253,6 +253,7 @@
 }
 
 .hm-svc-crd {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,28 +269,35 @@
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
+.hm-svc-crd::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff5a3c;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
 .hm-svc-crd:hover {
-  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px; */
   box-shadow: rgba(224, 54, 2, 0.25) 0px 30px 60px -12px,
     rgba(218, 40, 0, 0.25) 0px 18px 36px -18px;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+}
+
+.hm-svc-crd:hover::before {
+  width: 100%;
 }
 
 .hm-svc-crd img {
-  /* width: 60%; */
   width: 100px;
   padding: 15px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
-  /* filter: invert(100%) sepia(100%) hue-rotate(15deg) saturate(500%); */
-  /* filter: brightness(10000%) hue-rotate(0deg); */
-  /* mix-blend-mode: multiply;
-  background-color: #ff5a3c;
-  filter: brightness(0%); */
-  /* object-fit: cover; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(255 90 60 / 68%);
 }
 
 .hm-svc-crd h4 {
@@ -808,7 +816,6 @@
 }
 
 .hm-amts-sub-container h2 {
-  /* font-size: var(--lg-sz); */
   font-weight: 700;
   margin-top: 1rem;
   color: var(--bk-color);
@@ -877,13 +884,11 @@
 .hm-ttl-container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  /* background-color: var(--sec-bg); */
   background-color: #f7f6fc;
   text-align: center;
 }
 
 .hm-ttl-sub-container h2 {
-  /* font-size: var(--lg-sz); */
   font-weight: 700;
   margin-top: 1rem;
   color: var(--bk-color);
@@ -1133,36 +1138,29 @@
 }
 
 .msc-card-face {
-  /* width: 300px; */
   width: 100%;
-  height: 200px;
+  height: 250px;
   transition: 0.5s;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+  padding: 50px 20px 30px;
+  text-align: center;
 }
 
 .msc-card-face-1 {
   position: relative;
-  /* background-color: #333; */
-  /* background-color: #035a78; */
-  /* background-color: #fff; */
-  /* background-color: var(--scnd-color); */
-  background-color: var(--bk-color-3);
+  background-color: #ff5a3c;
   display: flex;
   justify-content: center;
   z-index: 1;
-  transform: translateY(100px);
-  /* transform: translateY(100px); */
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 5px solid white;
+  padding: 10px;
+  margin: 0 auto -40px;
 }
 
-.msc-card:hover .msc-card-face-1 {
-  /* background: #ff0057; */
-  /* background: #fff; */
-  background-color: var(--bk-color-3);
-  /* background-color: var(--scnd-color); */
-  /* background-color: var(--scnd-color); */
-  transform: translateY(0);
-}
 
 .msc-card-content {
   /* opacity: 0.2; */
@@ -1187,15 +1185,13 @@
 }
 
 .msc-card-content img {
-  max-width: 60px;
+  max-width: 70%;
   filter: invert(100%);
 }
 
 .msc-card-content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: #fff;
-  /* color: var(--bk-color-2); */
   text-align: center;
   font-size: var(--md-sz);
   font-family: var(--primary-font);
@@ -1203,26 +1199,16 @@
 
 .msc-card-face-2 {
   position: relative;
-  /* background: #fff; */
-  /* background-color: #627176; */
   background-color: var(--scnd-color-2);
-  /* background-color: #fff; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  padding: 20px;
   box-sizing: border-box;
-  /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: translateY(-100px);
 }
 
-.msc-card:hover .msc-card-face-2 {
-  transform: translateY(0);
-}
+
 
 .msc-card-face-2 .msc-card-content p {
-  /* color: #fff; */
   color: var(--bk-color-2);
   margin: 0;
   padding: 0;
@@ -1238,30 +1224,22 @@
 
 .msc-card-face-2 .msc-card-content a {
   text-decoration: none;
-  /* margin: 15px 0 0;
-  display: inline-block;
-  font-weight: 900;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333; */
 }
 
 .msc-card-face-2 .msc-card-content a button {
-  /* color: #d3bf84; */
   color: #ffffff;
   font-size: 1rem;
   font-family: var(--primary-font);
-  /* border: 2px solid #d3bf84; */
   background-color: #00a89b !important;
-  /* background-color: #035a78 !important; */
   border-radius: 3px;
   padding: 0.25rem 1.75rem;
   margin-top: 1.5rem;
 }
 
-.msc-card-face-2 .msc-card-content a:hover {
-  /* background: #333 !important; */
-  /* color: #fff !important; */
+.msc-card:hover .msc-card-face-1 {
+  background: #101010;
+  border: 1px solid var(--scnd-color);
 }
+
 
 /* multi selector card end */
