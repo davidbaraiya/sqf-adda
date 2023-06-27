@@ -8,6 +8,8 @@ import PropertyDetails from './pages/Details/components/PropertyDetails'
 import PropertySubDetails from './pages/Details/components/PropertySubDetails'
 import Header from './components/common/Header'
 import Footer from './components/common/Footer'
+import TermsCondition from './pages/policy/TermsCondition'
+import PrivacyPolicy from './pages/policy/PrivacyPolicy'
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/property" element={<Property />} />
+          <Route path="/terms_and_condition" element={<TermsCondition />} />
+          <Route path="/privacy_and_policy" element={<PrivacyPolicy />} />
           <Route
             path="/property/property_details/:data_id"
             element={<PropertyDetails />}

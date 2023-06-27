@@ -53,6 +53,7 @@
 .cont-head h2 {
   font-size: var(--lg-sz);
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .cont-head a {

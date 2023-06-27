@@ -60,7 +60,7 @@ const Footer = () => {
               </Typography>
               <Typography>
                 <RoomOutlinedIcon />
-                C-4, 24th Floor, Alphathum Bhutani, sector 90A, 201305
+                Ground floor F-25 , film city, Noida , Sector 16A, 201301
               </Typography>
               <Typography>
                 <PhoneOutlinedIcon /> +91 9990908821, <br /> +91 95822 55176
@@ -89,32 +89,17 @@ const Footer = () => {
                 <Link to="/">Home</Link>
                 <Link to="/about">About Us</Link>
                 <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">Contact Us</Link>
               </Box>
             </Grid>
             <Grid className="ftr-area-2" item xs={12} sm={6} md={2}>
               <Typography variant="h6">Services</Typography>
               <Box>
-                <Link to="">Consult Service</Link>
-                <Link to="">Property Management</Link>
-                <Link to="">Renting and Selling</Link>
-                {/* 
-                                <Link to=''>About</Link>
-                                <Link to=''>About</Link>
-                                <Link to=''>About</Link>
-                                <Link to=''>About</Link>
-                                <Link to=''>About</Link>
-                                <Link to=''>About</Link> */}
+                <Link to="#">Consult Service</Link>
+                <Link to="#">Property Management</Link>
+                <Link to="#">Renting and Selling</Link>
               </Box>
             </Grid>
-            {/* <Grid className="ftr-area-2" item xs={12} sm={6} md={2}>
-                            <Typography variant="h6">Customer Care
-                            </Typography>
-
-                            <Box>
-                                <Link to=''>Contact Us</Link>
-                            </Box>
-
-                        </Grid> */}
             <Grid className="ftr-area-3" item xs={12} sm={6} md={3}>
               <Typography variant="h6">Newsletter</Typography>
               <Typography sx={{ mb: 3 }}>
@@ -138,10 +123,11 @@ const Footer = () => {
         </Box>
       </Box>
       <Box className="ftr-btm">
-        <Link to="">All Rights Reserved @ Company 2023</Link>
-        <Link to="">Terms & Condition</Link>
-        <Link to="">Claim</Link>
-        <Link to="">Privacy & Policy</Link>
+        <Typography color="#fff" mr="auto">
+          All Rights Reserved @ Company 2023
+        </Typography>
+        <Link to="/terms_and_condition">Terms & Condition</Link>
+        <Link to="/privacy_and_policy">Privacy & Policy</Link>
       </Box>
     </>
   )

@@ -1,0 +1,13 @@
+p {
+  margin-bottom: 15px;
+  font-size: 15px !important;
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 1.5 !important;
+}
+
+h6 {
+  font-weight: 500 !important;
+  margin-top: 30px !important;
+  color: #ff5a3c;
+
+}

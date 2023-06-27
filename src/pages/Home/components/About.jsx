@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Fade } from 'react-reveal'
-import img2 from '../../../assets/images/12.jpg'
-import img from '../../../assets/images/9.png'
+import img1 from '../../../assets/images/img1.jpg'
+import img2 from '../../../assets/images/img2.jpg'
+import img3 from '../../../assets/images/img3.png'
 
 export default function About() {
   return (
@@ -28,20 +29,21 @@ export default function About() {
             </Fade>
           </Grid>
           <Grid className="hm-abt-rt-grd" item xs={12} md={6}>
-            {/* <div className="img-grp ">
-              <div className="img-wrapper1">
-                <img src={img2} alt="" />
-              </div>
-              <div className="img-wrappe2">
-                <img src={img2} alt="" />
-              </div>
-              <div className="img-wrapper3">
-                <img src={img2} alt="" />
-              </div>
-            </div> */}
-            <Fade right>
-              <img src={img} alt="img" loading="lazy" />
-            </Fade>
+            <Box display={'flex'} gap={2} className="img-grp" width="100%">
+              <Fade right>
+                <div className="img-wrapper img-wrapper-main">
+                  <img src={img1} alt="img" loading="lazy" />
+                </div>
+              </Fade>
+              <Box display="flex" flexDirection="column" gap={2} width="100%">
+                <div className="img-wrapper">
+                  <img src={img2} alt="img" loading="lazy" />
+                </div>
+                <div className="img-wrapper">
+                  <img src={img3} alt="img" loading="lazy" />
+                </div>
+              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Container>
