@@ -22,6 +22,7 @@ const propertyData = [
   {
     id: 1,
     name: 'Gulshan',
+    category: 'residential',
     data: [
       {
         subId: 1,
@@ -102,6 +103,7 @@ const propertyData = [
   },
   {
     id: 2,
+    category: 'commercial',
     name: 'ATS Knightsbridge ',
     projectName: 'ATS Knightsbridge',
     thumbnail: ats_thumb,
@@ -142,6 +144,7 @@ const propertyData = [
   },
   {
     id: 3,
+    category: 'commercial',
     name: 'County 107',
     projectName: 'County 107',
     thumbnail: county_07_thumb,
@@ -199,6 +202,7 @@ const propertyData = [
   {
     id: 4,
     name: 'Mahagun Manorial',
+    category: 'residential',
     projectName: 'Mahagun Manorial',
     thumbnail: mahagun_manorial_thumb,
     discription: [
@@ -228,6 +232,7 @@ const propertyData = [
   {
     id: 5,
     name: 'Jaypee Greens',
+    category: 'residential',
     data: [
       {
         subId: 1,
@@ -271,6 +276,7 @@ const propertyData = [
   },
   {
     id: 6,
+    category: 'residential',
     name: 'The Islands by Gaurs',
     projectName: 'The Islands by Gaurs',
     thumbnail: gaurs_thumb,
@@ -311,6 +317,7 @@ const propertyData = [
   },
   {
     id: 7,
+    category: 'commercial',
     name: 'Sky Bhutani ',
     projectName: 'Sky Bhutani ',
     thumbnail: sky_bhutan_thumb,
@@ -333,6 +340,7 @@ const propertyData = [
   },
   {
     id: 8,
+    category: 'residential',
     name: 'Avenue 62',
     projectName: 'Avenue 62',
     thumbnail: ats_thumb,

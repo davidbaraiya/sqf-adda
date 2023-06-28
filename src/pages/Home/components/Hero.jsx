@@ -6,10 +6,12 @@ import {
   TextField,
   MenuItem,
 } from '@mui/material'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import ReactPlayer from 'react-player'
 import { Fade } from 'react-reveal'
 import video from '../../../assets/images/optimized.mp4'
+import { Link } from 'react-router-dom'
+// import { handleCategory } from '../../Details/Property'
 
 const currencies = [
   {
@@ -31,31 +33,38 @@ const currencies = [
 ]
 
 export default function Hero() {
-  const targetRef = useRef(null)
-  const [isStartVideo, setIsStartVideo] = useState(true)
+  const videoRef = useRef(null)
+
+  const handlePlayerReady = () => {
+    const videoElement = videoRef.current?.getInternalPlayer()
+    if (videoElement) {
+      videoElement.play()
+    }
+  }
 
   useEffect(() => {
-    const handleScroll = () => {
-      const targetElement = targetRef.current
-      if (targetElement) {
-        const { top, bottom } = targetElement.getBoundingClientRect()
-        const isVisible = top < window.innerHeight && bottom >= 0
-        setIsStartVideo(isVisible)
-      } else {
-        setIsStartVideo(true)
+    const videoElement = videoRef.current?.getInternalPlayer()
+
+    const handleVideoEnded = () => {
+      if (videoElement) {
+        videoElement.seekTo(0)
+        videoElement.play()
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
-    handleScroll() // Initial check
+    if (videoElement) {
+      videoElement.addEventListener('ended', handleVideoEnded)
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      if (videoElement) {
+        videoElement.removeEventListener('ended', handleVideoEnded)
+      }
     }
   }, [])
 
   return (
-    <Box ref={targetRef} className="hm-hero-container">
+    <Box className="hm-hero-container">
       <Container sx={{ height: '100%', width: '100%' }}>
         <Box className="hm-hero-cntnr">
           <Box className="hm-hero-up">
@@ -67,21 +76,26 @@ export default function Hero() {
             </Fade>
             <Fade bottom>
               <Box className="hm-hero-btns-group">
-                <Button>Rent Home</Button>
-                <Button>Sale Home</Button>
+                <Link to="/property" className="home-btn">
+                  residential
+                </Link>
+                <Link to="/property" className="home-btn">
+                  commercial
+                </Link>
               </Box>
             </Fade>
           </Box>
           <Box className="hm-hero-bottom">
             <ReactPlayer
               className="hm-hero-video"
-              url={video} // Replace with your video URL
-              //   playing={isVisible? true : false}
-              playing={isStartVideo}
-              //   controls
+              ref={videoRef}
+              url={video}
+              playing
+              muted
               loop
               width="100%"
               height="100%"
+              onReady={handlePlayerReady}
             />
           </Box>
           <Box className="hm-hero-mnu-card">

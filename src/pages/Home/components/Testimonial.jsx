@@ -16,13 +16,13 @@ export default function Testimonial() {
   return (
     <Box className="hm-ttl-container">
       <Container>
-        <Fade right>
+        <Fade>
           <Box className="hm-ttl-sub-container">
             <Typography variant="h6" className="sec-subtitle">
               Our Testimonial
             </Typography>
             <Typography variant="h2" className="lg-font">
-              Clients <span class="highlight-text">Feedback</span>
+              Clients <span className="highlight-text">Feedback</span>
             </Typography>
 
             <Box className="hm-ttl-swiper-seciton">
@@ -35,7 +35,7 @@ export default function Testimonial() {
                     spaceBetween: 20,
                   },
                   768: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                   },
                   1024: {

@@ -46,7 +46,7 @@ const Header = () => {
         }`}
       >
         <Container>
-          <Toolbar className="hdr-toolbar">
+          <Toolbar className="hdr-toolbar" sx={{ padding: '0 !important' }}>
             <Box sx={{ flexGrow: 1 }} className="hdr-logo">
               <Link to="/">
                 <img src={logo2} alt="" />
@@ -72,22 +72,22 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/contact"
-              >
-                <Button className={`header-menu-btn`} variant="text">
-                  Contact
-                </Button>
-              </NavLink>
-              <NavLink
-                className={({ isActive }) => (isActive ? 'activated' : '')}
                 to="/property"
               >
                 <Button className={`header-menu-btn`} variant="text">
                   Property
                 </Button>
               </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'activated' : '')}
+                to="/contact"
+              >
+                <Button className={`header-menu-btn`} variant="text">
+                  Contact
+                </Button>
+              </NavLink>
             </Box>
-            <Button className="hdr-add-listing-btn">Add Listing</Button>
+            {/* <Button className="hdr-add-listing-btn">Add Listing</Button> */}
           </Toolbar>
         </Container>
       </AppBar>

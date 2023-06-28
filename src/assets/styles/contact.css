@@ -45,9 +45,14 @@
 }
 
 .cont-container {
-  background-color: var(--scnd-color-2);
+  /* background-color: var(--scnd-color-2); */
+  background-color: #efd7d729;
   padding-top: 8rem;
   padding-bottom: 4rem;
+}
+
+.cont-container ol li:first-child {
+  margin-left: 0 !important;
 }
 
 .cont-head h2 {
@@ -58,7 +63,7 @@
 
 .cont-head a {
   /* color: var(--bk-color) !important; */
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
 }
 

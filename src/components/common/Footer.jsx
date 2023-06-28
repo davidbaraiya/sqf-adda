@@ -83,7 +83,7 @@ const Footer = () => {
                 </IconButton>
               </Box>
             </Grid>
-            <Grid className="ftr-area-2" item xs={2}>
+            <Grid className="ftr-area-2" item xs={12} sm={6} md={2}>
               <Typography variant="h6">Company</Typography>
               <Box>
                 <Link to="/">Home</Link>

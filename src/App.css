@@ -49,7 +49,8 @@ h3 {
   border-radius: 5px;
 }
 
-.swiper-slide, swiper-slide {
+.swiper-slide,
+swiper-slide {
   height: auto !important;
 }
 
@@ -58,4 +59,5 @@ h3 {
   .cont-head h2 {
     font-size: 24px !important;
   }
+
 }
