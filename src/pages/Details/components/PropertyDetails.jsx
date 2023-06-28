@@ -17,7 +17,8 @@ import { Fade } from 'react-reveal'
 
 const PropertyDetails = () => {
   const [viewDetails, setViewDetails] = useState(null)
-  const { data_id } = useParams()
+  const { data_id, category } = useParams()
+  console.log(category)
 
   useEffect(() => {
     const filteredData = propertyData.find(e => e.id === parseInt(data_id))

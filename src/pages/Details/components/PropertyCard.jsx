@@ -20,7 +20,7 @@ const PropertyCard = ({ flexDirection, property }) => {
             <div className="img-wrapper">
               <img src={curVal.thumbnail} alt="img" loading="lazy" />
             </div>
-            <CardContent>
+            <CardContent sx={{ width: '100%' }}>
               <Typography
                 gutterBottom
                 variant="h5"
@@ -40,7 +40,7 @@ const PropertyCard = ({ flexDirection, property }) => {
                 </Typography>
               ))}
               <Link
-                to={`property_details/${id}/${curVal.subId}`}
+                to={`/property_details/${id}/${curVal.subId}`}
                 className="more-details-btn"
               >
                 More Details
@@ -64,7 +64,7 @@ const PropertyCard = ({ flexDirection, property }) => {
         <div className="img-wrapper">
           <img src={thumbnail} alt="img" loading="lazy" />
         </div>
-        <CardContent>
+        <CardContent sx={{ width: '100%' }}>
           <Typography
             gutterBottom
             variant="h5"

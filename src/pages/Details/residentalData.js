@@ -1,3 +1,4 @@
+4
 import gulshan1_thumb from '../../assets/images/property/gulshan/gulshan-dynasty/thumbnail.jpg'
 import gulshan4 from '../../assets/images/property/gulshan/gulshan-dynasty/g4.jpg'
 import gulshan5 from '../../assets/images/property/gulshan/gulshan-dynasty/g5.jpg'
@@ -18,7 +19,7 @@ import gaurs6 from '../../assets/images/property/guar/Gaur6.jpg'
 import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
 // import avenue_62_thumb from '../../assets/images/property/'
 
-const propertyData = [
+const residentalData = [
   {
     id: 1,
     name: 'Gulshan',
@@ -77,27 +78,6 @@ const propertyData = [
           'Shiv Nadar School - Sector 168 (13 Minutes)',
           'Metro Station - Sector 144 (5 Minutes)',
           'PVR Multiplexes - Sector 18 (20 Minutes)',
-        ],
-      },
-      {
-        subId: 2,
-        name: 'gulshan',
-        category: 'commercial',
-        projectName: 'Gulshan One',
-        thumbnail: gulshan2_thumb,
-        discription: [
-          'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
-          'Introducing Gulshan One29 - A Captivating Commercial Destination',
-          'Discover Gulshan One29, the first commercial project strategically located at the prime junction of Noida-Greater Noida Expressway, in Sector 129. With its distinctive precincts dedicated to fun, food, fashion, and work, Gulshan One29 offers an unparalleled experience that goes beyond just being a destination. It is nestled amidst high-end residential developments and commercial zones/IT parks, ensuring a thriving environment.',
-        ],
-        features: [
-          '6 Screen Multiplex Theatre: Immerse yourself in the world of cinema like never before at the 6 screen multiplex theatre, where captivating movies come to life.',
-          'Amphitheatre: Enjoy open-air performances, cultural events, and entertainment spectacles at the amphitheater, providing a vibrant gathering space for memorable experiences.',
-          'Dedicated Food Area: Indulge in a wide variety of culinary delights at the dedicated food area, offering a range of dining options to satisfy your cravings.',
-          'Dedicated Work Space Area: Experience an ideal work environment with world-class office spaces that include a dedicated drop-off area for seamless accessibility.',
-          'Double Entry & Enhanced Visibility of Stores: Benefit from enhanced visibility for your business with double entry points, ensuring maximum exposure and footfall.',
-          'Temperature Controlled Environment: Enjoy a comfortable and pleasant shopping and working experience with the temperature-controlled environment, creating an inviting ambiance.',
-          'Unlock the potential of Gulshan One29 for your business. Contact us now to explore the exciting commercial opportunities and secure your space in this captivating destination!',
         ],
       },
     ],
@@ -319,56 +299,6 @@ const propertyData = [
       'Conference Room',
     ],
   },
-  {
-    id: 7,
-    category: 'commercial',
-    name: 'Sky Bhutani ',
-    projectName: 'Sky Bhutani ',
-    thumbnail: sky_bhutan_thumb,
-    discription: [
-      'Welcome to Squarefoot Adda - Your Ultimate Real Estate Consultancy',
-      'Introducing Sky Bhutani - Lounge and Nightclub: Where Luxury Meets Excellence',
-      'Sky Bhutani is a masterpiece of exquisite architecture and interior design, setting the stage for the grandest levels of luxury and the highest standards of service. As part of the best commercial property in Noida, this lounge and nightclub also presents an incredible investment opportunity.',
-      "Situated on the top floor of Alphathum, one of the tallest commercial towers in Noida, Sky Bhutani offers a mesmerizing view of Noida's skyline. The allure of this ultra-luxurious establishment is further enhanced by its one-of-a-kind infinity pool. As night falls, the pool transforms into a captivating sight with its splendid ambiance and dazzling lights. Sky Bhutani provides connoisseurs of fine dining with a unique opportunity to indulge in culinary excellence and tantalize their taste buds.",
-    ],
-    features: [
-      "India's Most Efficient Business Towers: Sky Bhutani is part of a prestigious commercial property known for its efficiency and business prominence.",
-      "Largest Rooftop Infinity Pool: Enjoy the luxury of one of India's largest rooftop infinity pools, offering a remarkable and unmatched experience.",
-      'Sky Gardens and Breakout Areas: Designed with sky gardens and breakout areas, Sky Bhutani creates a harmonious and refreshing environment.',
-      'Climatically Responsive Architecture: Experience the advantages of climatically responsive architecture, ensuring optimal comfort and sustainability.',
-      'Automated Building Management System: An advanced Building Management System with HVAC technology reduces energy consumption and enhances efficiency.',
-      'Ultra-Modern Building: Sky Bhutani features an ultra-modern building design with high-speed lifts, reflecting the epitome of sophistication.',
-      'Walkways and Inter-Building Connectivity: Convenient walkways within the building and excellent inter-building connectivity contribute to seamless accessibility.',
-      'Automated Car Parking System: Enjoy the convenience of an automated car parking system, providing hassle-free parking for guests and patrons.',
-    ],
-  },
-  {
-    id: 8,
-    category: 'commercial',
-    name: 'Avenue 62',
-    projectName: 'Avenue 62',
-    thumbnail: ats_thumb,
-    discription: [
-      'Discover the Future of Retail and Business with 62 Avenue',
-      "Welcome to 62 Avenue, a landmark development that's not just about the products or services you find, but the experiences you create. This is retail for the future, and it's ready for you to explore.",
-      '62 Avenue is a project by Bhutani Group, a renowned name in the real estate industry. With a portfolio that includes successful projects like Techno Park, Alphathum, and The I-THUM, Bhutani Group has a proven track record of delivering world-class commercial spaces.',
-    ],
-    deliveredProjects: [
-      'Techno Park, Noida: A commercial development equipped with all the amenities to facilitate the needs of office people.',
-      'Alphathum, Sector 90, Noida: Offering one of the largest infinity pools in India, Alphathum lays the ground for efficient and smart office spaces.',
-      'The I-THUM, Sector 62, Noida: A landmark development and the future of IT Parks in Noida. It offers Commercial Office Spaces and shares the campus of the Corenthum including some leading banks.',
-      'World Square Mall, Sector - 127, Noida: One of the leading malls in Ghaziabad with a multiplex, banquet, and a 3 Star Hotel.',
-    ],
-    ongoingProjects: [
-      'Parmesh Complex, Nirman Vihar',
-      'Parmesh Corporate Tower, Karkardooma',
-      'Cyberthum, Sector - 140A, Noida: Part of a 26.8 acres mixed-use development, Cyberthum is NCR’s tallest commercial tower with world-class spaces, mall in the sky, and Bolt, one of India’s biggest gaming and entertainment centers.',
-      'City Center 150, Sector - 150, Noida: A glimpse into the future of retail and lifestyle entertainment. With al-fresco style high-street retail in a low-rise development, the project is built to immerse visitors in a world of seamless convenience.',
-    ],
-
-    investmentOpportunity:
-      'Investments are subject to market risks. Read the offer document carefully before investing. The pictures and details are tentative depictions only. Mentioned features are indicative and are subject to change without any prior notice as may be decided by the company or competent authority.',
-  },
 ]
 
-export default propertyData
+export default residentalData

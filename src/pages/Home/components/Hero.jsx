@@ -76,10 +76,10 @@ export default function Hero() {
             </Fade>
             <Fade bottom>
               <Box className="hm-hero-btns-group">
-                <Link to="/property" className="home-btn">
+                <Link to="/property/residential" className="home-btn">
                   residential
                 </Link>
-                <Link to="/property" className="home-btn">
+                <Link to="/property/commercial" className="home-btn">
                   commercial
                 </Link>
               </Box>

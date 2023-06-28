@@ -18,67 +18,11 @@ import gaurs6 from '../../assets/images/property/guar/Gaur6.jpg'
 import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
 // import avenue_62_thumb from '../../assets/images/property/'
 
-const propertyData = [
+const commercialData = [
   {
     id: 1,
     name: 'Gulshan',
     data: [
-      {
-        subId: 1,
-        projectName: 'Gulshan Dynasty',
-        category: 'residential',
-        thumbnail: gulshan1_thumb,
-        images: [gulshan4, gulshan5],
-        discription: [
-          'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
-          'Explore Gulshan Dynasty - Sector 144, Noida',
-          'Experience the epitome of luxury at Gulshan Dynasty, an upcoming residential development that sets new standards in sophisticated living. Nestled in Sector 144, Noida, Gulshan Dynasty sprawls across 5.8 acres of land, enveloped by 70% open green space. With its low-density design of only 35 families per acre, this project boasts 3 high-rise towers and 198 meticulously crafted apartments.',
-          'Drawing from over 30 years of expertise, Gulshan Dynasty offers a refined living experience like no other. Unwind in air-conditioned apartments equipped with world-class amenities, where attention to detail and comfort are paramount. Indulge in a serene environment that nurtures your mental and physical well-being. ',
-          'Connectivity is key, and Gulshan Dynasty seamlessly connects you to major highways, expressways, and airports, ensuring hassle-free travel. The project also features high-speed elevators, enhancing convenience and efficiency for residents.',
-        ],
-        highlights: [
-          '4 BHK Premium Apartments',
-          'Total 198 Apartments & 6 Duplexes',
-          'Private Lift Lobby',
-          '70% Green Area',
-          'Only 2 Homes Per Floor',
-          'Contactless Serviced Homes',
-          'Hydroponic Farming',
-          '7-Tier Security System',
-          'Platinum-rated green building affiliation from IGBC',
-        ],
-        amenities: {
-          indoor: [
-            'Indoor Badminton Court',
-            'Table Tennis Room',
-            'Multi-purpose Hall with Pantry Space',
-            'Gym',
-            "Indoor Kid's Play Area",
-            'Board & Card Games Area',
-          ],
-          outdoor: [
-            'Amphitheatre',
-            'Balinese Landscaping',
-            'Rainwater Harvesting Pond',
-            'Sandpit Area for Kids',
-            'Multi-purpose Open Area',
-            'Party Lawn',
-            'Open Lawn',
-            'Swimming Pool',
-            'Floodlit Tennis Court',
-            'Floodlit Full-size Basketball Court',
-            'Children Play Area',
-          ],
-        },
-        nearbyLandmarks: [
-          'Amity University - Sector 125 (15 Minutes)',
-          'JYPEE Hospital - Sector 128 (15 Minutes)',
-          'Mall of India - Sector 18 (20 Minutes)',
-          'Shiv Nadar School - Sector 168 (13 Minutes)',
-          'Metro Station - Sector 144 (5 Minutes)',
-          'PVR Multiplexes - Sector 18 (20 Minutes)',
-        ],
-      },
       {
         subId: 2,
         name: 'gulshan',
@@ -101,134 +45,6 @@ const propertyData = [
         ],
       },
     ],
-  },
-  {
-    id: 2,
-    category: 'residential',
-    name: 'ATS Knightsbridge ',
-    projectName: 'ATS Knightsbridge',
-    thumbnail: ats_thumb,
-    images: [ats3, ats4],
-    discription: [
-      'Introducing ATS Knightsbridge - A Luxurious Haven in Sector 124, Noida',
-      'Welcome to ATS Knightsbridge, a newly launched premium residential project that promises an unparalleled lifestyle. Situated in Sector 124, ATS Knightsbridge offers a sophisticated living experience with world-class amenities. This project provides easy access to essential social infrastructures and enjoys strategic connectivity to the IT hub, making it an ideal choice for discerning homeowners.',
-      'Construction at ATS Knightsbridge is progressing rapidly, with phase-wise development underway. The project is projected to be ready for possession by June 2024. Spanning across 6 acres of expansive land, ATS Knightsbridge offers well-designed homes with abundant open spaces, lush greenery, and ample natural light.',
-    ],
-    features: [
-      "Spectacular View of National Park: Immerse yourself in breathtaking views of the nearby national park, where nature's beauty unfolds before your eyes.",
-      'Accessibility to Key Landmarks: Enjoy seamless connectivity to major landmarks, ensuring convenience and ease of travel to desired destinations.',
-      'Accessible to Schools and Medical Facilities: ATS Knightsbridge is in close proximity to reputed educational institutions and healthcare centers, ensuring a well-rounded and convenient lifestyle.',
-      "Children's Play Area and Landscaped Gardens: Delight in the well-planned amenities, including dedicated spaces for children to play and explore, as well as beautifully landscaped gardens for relaxation and rejuvenation.",
-      'Swimming Pool and Olympic Size Swimming Pool: Indulge in refreshing swims in the elegantly designed swimming pool or enjoy the luxury of an Olympic size swimming pool.',
-      'Tree Plantation: Experience the serenity of a green environment with abundant tree plantation throughout the project, enhancing the overall ambiance and well-being.',
-    ],
-    priceList: [
-      { type: '4 BHK', size: '6000 Sq. Ft.', price: '₹10.80 Cr* onwards' },
-      { type: '6 BHK', size: '10050 Sq. Ft.', price: 'On request only' },
-    ],
-    locationAdvantage: {
-      connectivity: [
-        'Noida-Greater Noida Expressway: 14 Minutes',
-        'South & East Delhi: 20 Minutes',
-        '5-minute drive to DND',
-        '2-minute drive to Kalindi Kunj',
-      ],
-      nearbyUniversity: 'Amity University Noida: 4 Minutes',
-      shopping: '5-minute drive to Atta Market',
-    },
-    developer: {
-      name: 'ATS Group',
-      legacy: '16 years',
-      description:
-        'ATS Group is renowned for crafting housing developments that fulfill the dreams of residents. With a legacy of 16 years, ATS has delivered several world-class projects, establishing itself as a leading name in the Indian real estate sector. The in-house team of 40 designers, engineers, architects, foremen, and technicians at ATS brings passion and craftsmanship to every project. Immerse yourself in the abundant greenery and thoughtful planning that defines an ATS project, offering a serene and captivating living experience.',
-    },
-  },
-  {
-    id: 3,
-    category: 'residential',
-    name: 'County 107',
-    projectName: 'County 107',
-    thumbnail: county_07_thumb,
-    images: [county_07_3, county_07_4, county_07_5],
-    discription: [
-      'Welcome to Squarefoot Adda - Your Destination for Real Estate Excellence ',
-      'Introducing County107 - Luxury Living at its Finest',
-      'Discover the epitome of luxury at County107, located in Sector 107, Noida. Developed by County Group, this project offers a range of 4/5 BHK luxurious flats at affordable prices. With a unique concept in residential development, County107 aims to provide a lifetime of solace and comfort. Surrounded by opulent choices, these homes are designed to elevate your living experience to new heights',
-      "At County107, we are committed to achieving IGBC's Platinum Green Building certification. For nature enthusiasts, we offer real timber right on your balcony, creating a natural filter and providing a tranquil environment. Start your day by sipping your morning beverage under the shade of your personal tree. With a no-driveway, no-parking, and no-vehicular movement on the ground approach, you can enjoy the platinum green environment of County107 while unique Golf carts ferry you across the project",
-    ],
-    priceList: [
-      {
-        price: '₹4.7 Cr* (ALL IN)*',
-        negotiable: true,
-        carpetArea: '3501 Sq.Ft.',
-        type: '4 BHK + 4T',
-      },
-      {
-        price: '₹5.60 Cr (ALL IN)*',
-        negotiable: true,
-        carpetArea: '4482 Sq.Ft.',
-        type: '4 BHK + 4T + 2U',
-      },
-      {
-        price: '₹8.21 Cr (ALL IN)*',
-        negotiable: true,
-        carpetArea: '6570 Sq.Ft.',
-        type: '5 BHK + 5T + 3U',
-      },
-    ],
-    highlights: [
-      '01. Possession in 2023',
-      '02. Exclusive offerings available',
-      '03. Discount offers available',
-      '04. Best prices guaranteed',
-    ],
-    amenities: [
-      'Banquet',
-      'Gymnasium',
-      'Mini Theatre',
-      'Billiards Table',
-      'Cards Room',
-    ],
-    locationAdvantage: {
-      connectivity: [
-        'Pathways School: 1.1 km',
-        'Apollo Hospital: 8.3 km',
-        'Jaypee Hospital: 5.2 km',
-        'DND Flyway: 9.3 km',
-        'Mall of India: 9.1 km',
-        'Sector 101 Metro Station: 4.1 km',
-      ],
-    },
-  },
-  {
-    id: 4,
-    name: 'Mahagun Manorial',
-    category: 'residential',
-    projectName: 'Mahagun Manorial',
-    thumbnail: mahagun_manorial_thumb,
-    discription: [
-      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Real Estate',
-      'Experience Extravagance at Mahagun Manorial',
-      'Step into a world of enchantment at Mahagun Manorial, where luxury and elegance redefine your lifestyle. Wake up to breathtaking vistas of rolling green landscapes that stretch as far as the eye can see. The flawless design, graceful architecture, and captivating views of Mahagun Manorial surpass even your wildest imagination. These homes epitomize fine living, adding allure and charm to your everyday life.',
-    ],
-    features: [
-      'Panoramic 180-degree vistas of the golf course',
-      'Generously sized spaces for entertaining or relaxation',
-      '18-hole and 9-hole championship golf courses designed by Graham Cooke Architects',
-      'Luxurious Mahagun Manorial Club with five-star hotel amenities',
-      'Dedicated play areas for children',
-      'Infinity pool with stunning surroundings',
-      'Iconic landmark architecture designed by Hafeez Contractor',
-      'Reinforced concrete frame and piled foundation executed with aluminum shuttering',
-      'Exterior features texture paint, glass railings, full-height glazed door windows, corner windows, and a GRC jaali pattern',
-      'Floor-to-floor heights of 80 meters for entrance hall and lift lobby on the ground floor',
-      'Ceiling height of 3.375 meters in all rooms and living areas',
-      'Double-height living rooms in villaments soaring to an impressive 6.75 meters',
-      'Suspended limited false ceilings finished with acrylic emulsion paint',
-      'Comfort cooling and reverse cooling provided by VEF units in living areas and bedrooms',
-    ],
-    googleMap:
-      'www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7414614.4498882145!2d70.67199367500709!3d24.849596318607343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce63d9ef903ad%3A0x1bdecaaddabcf95d!2sSector%20128%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1687494765744!5m2!1sen!2sin',
   },
   {
     id: 5,
@@ -276,47 +92,6 @@ const propertyData = [
           'Unlock the possibilities at Jaypee Greens Wish Town Agra. Contact us now to explore the wide range of residential options and experience a vibrant and fulfilling lifestyle!',
         ],
       },
-    ],
-  },
-  {
-    id: 6,
-    category: 'residential',
-    name: 'The Islands by Gaurs',
-    projectName: 'The Islands by Gaurs',
-    thumbnail: gaurs_thumb,
-    images: [gaurs5, gaurs6],
-    discription: [
-      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Real Estate  ',
-      'Discover The Islands by Gaurs in Jaypee Greens, Greater Noida ',
-      'When Life and Lifestyle Breathe Luxury - Apartments & Penthouses',
-      'Gaurs Group presents a fantasy of luxurious lifestyle combined with nature-friendly and green surroundings. Welcome to Gaur The Islands, a beautiful residential project located in Jaypee Greens, Greater Noida. Sprawling over 3.5 acres at Plot No. B-11, Jaypee Greens, Near Pari Chowk, Greater Noida, this project offers excellent connectivity to the Greater Noida Expressway and Yamuna Expressway. It serves as the perfect driveway to connect you with other areas of the NCR. Surrounded by top-notch corporate houses, commercial centers, and educational institutes, Gaur The Islands enjoys all the conveniences of daily life within close range. Notably, it features a well-maintained 18-hole golf course and a dedicated practice area.',
-      'The Islands by Gaur offers 4 BHK & 5 BHK ultra-luxurious apartments and penthouses, meticulously crafted to provide the best possible infrastructure. These residences boast a premium range of personal amenities and fixtures in the interiors. Ranging from 3,681.79 Sq.Ft. to 6,011.26 Sq. Ft., each apartment is designed with rear terraces for personal green spaces and a rooftop party terrace. Enjoy breathtaking views of the lush green golf course from these flats in Greater Noida. In addition to these luxurious living spaces, the project offers a wide range of lifestyle facilities to complement the upscale societies.  ',
-    ],
-    amenities: [
-      'CCTV Camera',
-      'Car Parking',
-      'Elevator',
-      '24x7 Power Backup',
-      'Earthquake Resistance',
-      'Garden',
-      'Schools: Jaypee Public School, Fr. Angels, Greater Valley',
-      'Hospitals',
-      'Security',
-    ],
-    highlights: [
-      'Amenities in a 452-acre gated community & 18-hole golf view',
-      'Indoor Heated Pool',
-      'Site Out/Chilling Pad',
-      'Kids Play Area',
-      'Walking Track',
-      'Senior Citizen Zone',
-      'Open Gym',
-      'Patisserie & Coffee Shop',
-      'Youngster Zone',
-      'Sports Bar',
-      'Steam & Sauna',
-      'Library',
-      'Conference Room',
     ],
   },
   {
@@ -371,4 +146,4 @@ const propertyData = [
   },
 ]
 
-export default propertyData
+export default commercialData
