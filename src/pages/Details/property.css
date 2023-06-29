@@ -149,25 +149,29 @@ li {
   font-weight: 700 !important;
   border-radius: 5px !important;
   text-transform: none !important;
-  color: var(--wh-color) !important;
-  background-color: var(--scnd-color) !important;
+  background-color: var(--wh-color) !important;
+  color: var(--scnd-color) !important;
   text-transform: capitalize !important;
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   -ms-border-radius: 5px !important;
   -o-border-radius: 5px !important;
-  border: 1px solid transparent !important;
+  border: 1px solid var(--scnd-color) !important;
   text-decoration: none;
   font-family: var(--nunito-font);
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .category-btn:hover,
 .category-btn.active {
   box-shadow: 0 3px 10px 3px #ff5a3c94 !important;
   border-color: #ffffff9e !important;
+  background-color: var(--scnd-color) !important;
+  color: #fff !important;
+
 }
 
 @media (max-width :991px) {

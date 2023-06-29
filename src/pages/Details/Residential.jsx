@@ -11,9 +11,9 @@ import BreadCrumbs from '../../components/BreadCrumbs'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 
 const Commercial = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   const BreadCrumbsData = {
     name: 'Residential Property',
@@ -26,9 +26,11 @@ const Commercial = () => {
       <Box className="property-builders" sx={{ padding: '3rem 0 5rem 0' }}>
         <Container>
           <Box display={'flex'} gap={2} marginBottom={5}>
+            <Link to="/property/residential" className="category-btn active">
+              Residential
+            </Link>
             <Link to="/property/commercial" className="category-btn">
-              <NavigateBeforeIcon />
-              go to commercial
+              commercial
             </Link>
           </Box>
           {residentalData?.map((property, i) => {

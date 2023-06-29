@@ -8,12 +8,11 @@ import PropertyCard from './components/PropertyCard'
 import commercialData from './commercialData'
 import { Link } from 'react-router-dom'
 import BreadCrumbs from '../../components/BreadCrumbs'
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 
 const Commercial = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  // useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
 
   const BreadCrumbsData = {
     name: 'Commercial Property',
@@ -26,9 +25,11 @@ const Commercial = () => {
       <Box className="property-builders" sx={{ padding: '3rem 0 5rem 0' }}>
         <Container>
           <Box display={'flex'} gap={2} marginBottom={5}>
-            <Link to="/property/residential" className="category-btn">
-              <NavigateBeforeIcon />
-              go to residential
+            <Link to="/property/residential" className="category-btn ">
+              Residential
+            </Link>
+            <Link to="/property/commercial" className="category-btn active">
+              commercial
             </Link>
           </Box>
           {commercialData?.map((property, i) => {
