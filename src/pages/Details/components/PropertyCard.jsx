@@ -18,7 +18,9 @@ const PropertyCard = ({ flexDirection, property }) => {
             }}
           >
             <div className="img-wrapper">
-              <img src={curVal.thumbnail} alt="img" loading="lazy" />
+              <Link to={`/residential/property_details/${id}/${curVal.subId}`}>
+                <img src={curVal.thumbnail} alt="img" loading="lazy" />
+              </Link>
             </div>
             <CardContent sx={{ width: '100%' }}>
               <Typography
@@ -40,7 +42,7 @@ const PropertyCard = ({ flexDirection, property }) => {
                 </Typography>
               ))}
               <Link
-                to={`/property_details/${id}/${curVal.subId}`}
+                to={`/residential/property_details/${id}/${curVal.subId}`}
                 className="more-details-btn"
               >
                 More Details
@@ -62,7 +64,9 @@ const PropertyCard = ({ flexDirection, property }) => {
         }}
       >
         <div className="img-wrapper">
-          <img src={thumbnail} alt="img" loading="lazy" />
+          <Link to={`/residential/property_details/${id}`}>
+            <img src={thumbnail} alt="img" loading="lazy" />
+          </Link>
         </div>
         <CardContent sx={{ width: '100%' }}>
           <Typography
@@ -83,7 +87,10 @@ const PropertyCard = ({ flexDirection, property }) => {
               {desc}
             </Typography>
           ))}
-          <Link to={`property_details/${id}`} className="more-details-btn">
+          <Link
+            to={`/residential/property_details/${id}`}
+            className="more-details-btn"
+          >
             More Details
             {/* <ChevronRightIcon /> */}
           </Link>

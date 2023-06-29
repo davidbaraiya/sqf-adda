@@ -5,6 +5,9 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   resolve: {
-      preserveSymlinks: true
-  }
+    preserveSymlinks: true,
+  },
+  css: {
+    modules: true,
+  },
 })

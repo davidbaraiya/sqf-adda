@@ -1,51 +1,27 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-key */
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './property.css'
-import { Box, Container, Typography, Button } from '@mui/material'
-import PropertyTop from './components/PropertyTop'
+import { Box, Container, Typography } from '@mui/material'
 import { Fade } from 'react-reveal'
 import PropertyCard from './components/PropertyCard'
 import propertyData from './propertyData'
+import BreadCrumbs from '../../components/BreadCrumbs'
 
 const Property = () => {
-  // const [categoryData, setCategoryData] = useState(propertyData || [])
-  // const [activeCategory, setActiveCategory] = useState(null)
-
-  // const uniqCategory = [...new Set(propertyData?.map(item => item.category))]
-
-  // const handleCategory = category => {
-  //   const filterCategory = propertyData.filter(
-  //     item => item.category === category
-  //   )
-  //   setCategoryData(filterCategory)
-  //   setActiveCategory(category)
-  // }
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
+  const BreadCrumbsData = {
+    name: 'Property',
+    path: '/property',
+  }
+
   return (
     <Box>
-      <PropertyTop />
+      <BreadCrumbs BreadCrumbsData={BreadCrumbsData} />
       <Box className="property-builders" sx={{ padding: '3rem 0 5rem 0' }}>
         <Container>
-          <Box display={'flex'} gap={2} marginBottom={5}>
-            {uniqCategory.map((category, i) => (
-              <Button
-                variant="contained"
-                key={i}
-                className={`category-btn ${
-                  activeCategory === category ? 'active' : ''
-                }`}
-                onClick={() => handleCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </Box>
-          {categoryData?.map((property, i) => {
+          {propertyData?.map((property, i) => {
             const flexDirection = i % 2 === 0 ? 'row-reverse' : 'row'
             return (
               <Box
@@ -74,4 +50,3 @@ const Property = () => {
 }
 
 export default Property
-export const handleCategory = Property.handleCategory

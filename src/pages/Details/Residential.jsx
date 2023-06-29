@@ -3,24 +3,31 @@
 import React, { useEffect, useState } from 'react'
 import './property.css'
 import { Box, Container, Typography, Button } from '@mui/material'
-import PropertyTop from './components/PropertyTop'
 import { Fade } from 'react-reveal'
 import PropertyCard from './components/PropertyCard'
 import residentalData from './residentalData'
 import { Link } from 'react-router-dom'
+import BreadCrumbs from '../../components/BreadCrumbs'
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 
 const Commercial = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
+  const BreadCrumbsData = {
+    name: 'Residential Property',
+    path: '/property/residential',
+  }
+
   return (
     <Box>
-      <PropertyTop />
+      <BreadCrumbs BreadCrumbsData={BreadCrumbsData} />
       <Box className="property-builders" sx={{ padding: '3rem 0 5rem 0' }}>
         <Container>
           <Box display={'flex'} gap={2} marginBottom={5}>
             <Link to="/property/commercial" className="category-btn">
+              <NavigateBeforeIcon />
               go to commercial
             </Link>
           </Box>

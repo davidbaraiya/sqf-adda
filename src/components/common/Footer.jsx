@@ -53,7 +53,7 @@ const Footer = () => {
               md={5}
               sx={{ pr: { xs: 0, md: 6 } }}
             >
-              <img src={logo} alt="" />
+              <img src={logo} alt="img" />
               <Typography>
                 Welcome to Squarefoot Adda, your one-stop solution for all your
                 real estate needs.
@@ -63,10 +63,30 @@ const Footer = () => {
                 Ground floor F-25 , film city, Noida , Sector 16A, 201301
               </Typography>
               <Typography>
-                <PhoneOutlinedIcon /> +91 9990908821, <br /> +91 95822 55176
+                <PhoneOutlinedIcon />
+                <div style={{ marginTop: '0', display: 'block' }}>
+                  <a
+                    href="tel:+919990908821"
+                    style={{ color: '#fff', display: 'block' }}
+                  >
+                    +91 9990908821
+                  </a>
+                  <a
+                    href="tel:+919582255176"
+                    style={{ color: '#fff', display: 'block' }}
+                  >
+                    +91 95822 55176
+                  </a>
+                </div>
               </Typography>
               <Typography>
-                <EmailOutlinedIcon /> hello@squarefootadda.com
+                <EmailOutlinedIcon />{' '}
+                <a
+                  href="mailto:hello@squarefootadda.com"
+                  style={{ color: '#fff' }}
+                >
+                  hello@squarefootadda.com
+                </a>
               </Typography>
               <Box>
                 <IconButton size="small">

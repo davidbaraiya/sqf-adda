@@ -19,6 +19,7 @@ h2,
 h4,
 h3 {
   font-family: var(--poppins-font) !important;
+  font-weight: 600 !important;
 }
 
 .highlight-text {

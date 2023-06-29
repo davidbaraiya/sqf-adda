@@ -1,4 +1,3 @@
-// import DevicesOtherIcon from '@mui/icons-material/DevicesOther';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded'
 import {
   Box,
@@ -18,7 +17,7 @@ export default function AboutUs() {
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={5}>
-            <Fade left>
+            <Fade bottom>
               <Box className="abt-left-box">
                 <img src={img1} alt="" />
                 <Box className="abt-left-vdo">
@@ -33,13 +32,13 @@ export default function AboutUs() {
             </Fade>
           </Grid>
           <Grid className="abt-us-right-sec" item xs={12} md={7}>
-            <Fade right>
+            <Fade bottom>
               <Box className="abt-right-box">
                 <Typography variant="h6" className="sec-subtitle">
                   About Us
                 </Typography>
                 <Typography variant="h2" className="lg-font">
-                  Today Sells Properties
+                  Today Sells <span className="highlight-text">Properties</span>
                 </Typography>
                 <Typography>
                   Welcome to Squarefoot Adda, your one-stop solution for all
@@ -51,43 +50,6 @@ export default function AboutUs() {
                   experience and find the perfect property that suits your
                   needs.
                 </Typography>
-
-                {/* <Box className="abt-info-list">
-                                <Box>
-                                    <Box>
-                                        <IconButton size='large'>
-                                            <DevicesOtherIcon />
-                                        </IconButton>
-                                        <Typography>Smart Home Design</Typography>
-                                    </Box>
-                                    <Box>
-                                        <IconButton size='large'>
-                                            <DevicesOtherIcon />
-                                        </IconButton>
-                                        <Typography>Smart Home Design</Typography>
-                                    </Box>
-                                </Box>
-                                <Box>
-                                    <Box>
-                                        <IconButton size='large'>
-                                            <DevicesOtherIcon />
-                                        </IconButton>
-                                        <Typography>Smart Home Design</Typography>
-                                    </Box>
-                                    <Box>
-                                        <IconButton size='large'>
-                                            <DevicesOtherIcon />
-                                        </IconButton>
-                                        <Typography>Smart Home Design</Typography>
-                                    </Box>
-                                </Box>
-                            </Box> */}
-                {/* <Box className="abt-callist" >
-                                <Typography>
-                                    {`"Enimad minim veniam quis nostrud exercitation 
-                                    llamco laboris. Lorem ipsum dolor sit amet"`}
-                                </Typography>
-                            </Box> */}
                 <Button sx={{ mt: 6 }} className="abt-service-btn">
                   Our Services
                 </Button>

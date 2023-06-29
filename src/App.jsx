@@ -29,11 +29,11 @@ function App() {
           <Route path="/terms_and_condition" element={<TermsCondition />} />
           <Route path="/privacy_and_policy" element={<PrivacyPolicy />} />
           <Route
-            path="/property/:category/property_details/:data_id"
+            path="/residential/property_details/:data_id"
             element={<PropertyDetails />}
           />
           <Route
-            path="/property/:category/property_details/:data_id/:sub_id"
+            path="/residential/property_details/:data_id/:sub_id"
             element={<PropertySubDetails />}
           />
         </Routes>

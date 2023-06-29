@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from '@mui/material'
-import BreadCrumbs from './Breadcrumbs'
+import BreadCrumbs from '../../components/BreadCrumbs'
 import './policy.css'
 import { useEffect } from 'react'
 

@@ -217,8 +217,7 @@ const residentalData = [
       {
         subId: 1,
         projectName: 'Jaypee Greens',
-        category: 'commercial',
-        category: 'residential',
+        category: 'commercial and residential',
         thumbnail: jaypee_green_thumb,
         discription: [
           'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
@@ -237,7 +236,6 @@ const residentalData = [
       {
         subId: 2,
         category: 'commercial',
-        category: 'residential',
         projectName: 'Jaypee Greens Wish Town',
         thumbnail: jaypee_wish_thumb,
         discription: [

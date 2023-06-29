@@ -15,7 +15,7 @@ export default function Team() {
               Team
             </Typography>
             <Typography variant="h2" className="lg-font">
-              Property Agents
+              Property <span className="highlight-text">Agents</span>
             </Typography>
           </Fade>
           <Fade bottom>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import '../../assets/styles/home.css'
 import About from './components/About'
 import Hero from './components/Hero'
@@ -7,6 +8,10 @@ import Services from './components/Services'
 import Testimonial from './components/Testimonial'
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Hero />

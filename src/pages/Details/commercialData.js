@@ -1,22 +1,8 @@
-import gulshan1_thumb from '../../assets/images/property/gulshan/gulshan-dynasty/thumbnail.jpg'
-import gulshan4 from '../../assets/images/property/gulshan/gulshan-dynasty/g4.jpg'
-import gulshan5 from '../../assets/images/property/gulshan/gulshan-dynasty/g5.jpg'
 import gulshan2_thumb from '../../assets/images/property/gulshan/gulshan-one/thumbnail.png'
 import ats_thumb from '../../assets/images/property/ats/thumbnail.jpg'
-import ats3 from '../../assets/images/property/ats/ats3.jpg'
-import ats4 from '../../assets/images/property/ats/ats4.jpg'
-import county_07_thumb from '../../assets/images/property/county-107/thumbnail.jpg'
-import county_07_3 from '../../assets/images/property/county-107/county3.jpg'
-import county_07_4 from '../../assets/images/property/county-107/county4.jpg'
-import county_07_5 from '../../assets/images/property/county-107/county5.jpg'
-import mahagun_manorial_thumb from '../../assets/images/property/mahagun-manorial/thumbnail.webp'
 import jaypee_green_thumb from '../../assets/images/property/jaypee/jaypee-greens/thumbnail.png'
 import jaypee_wish_thumb from '../../assets/images/property/jaypee/wish-town/thumbnail.png'
-import gaurs_thumb from '../../assets/images/property/guar/thumbnail.jpg'
-import gaurs5 from '../../assets/images/property/guar/Gaur5.jpg'
-import gaurs6 from '../../assets/images/property/guar/Gaur6.jpg'
 import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
-// import avenue_62_thumb from '../../assets/images/property/'
 
 const commercialData = [
   {
@@ -53,7 +39,6 @@ const commercialData = [
       {
         subId: 1,
         projectName: 'Jaypee Greens',
-        category: 'commercial',
         category: 'residential',
         thumbnail: jaypee_green_thumb,
         discription: [
@@ -68,28 +53,6 @@ const commercialData = [
           'World-Class Amenities: Benefit from an exceptional education system, international standard healthcare facilities, shopping arcades, corporate offices, and spiritual centers.',
           'Ready-to-Move Apartments: Possession has already been offered in multiple apartment projects, ensuring you can move into your dream home right away.',
           'Seamless Golf Facility: Immerse yourself in the luxury of the 18+9 Hole Graham Cooke Golf facility, seamlessly integrated into the residential community.',
-        ],
-      },
-      {
-        subId: 2,
-        category: 'commercial',
-        category: 'residential',
-        projectName: 'Jaypee Greens Wish Town',
-        thumbnail: jaypee_wish_thumb,
-        discription: [
-          'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
-          'Discover Jaypee Greens Wish Town Agra - Where Dreams Come to Life  ',
-          'Jaypee Greens Wish Town Agra is a diverse and progressive township that spans over 505 hectares, combining the essence of sophisticated city living with a warm and friendly neighborhood ambiance.',
-          'Immerse yourself in a well-planned picturesque community, adorned with various thematic gardens. This thoughtfully designed township offers an array of world-class residences, recreational facilities, commercial spaces, and institutional spaces. Every aspect of the master plan has been carefully crafted to provide a harmonious and fulfilling living experience.',
-          'Nestled at the intersection of NH2 and the 165-kilometer-long Yamuna Expressway, Jaypee Greens Wish Town Agra enjoys excellent connectivity and prime location advantages. It offers seamless accessibility to major highways, ensuring convenient travel to nearby cities and destinations.',
-        ],
-        features: [
-          'Diverse and Progressive Township: Experience the vibrancy of a diverse and progressive community that fosters a sense of belonging.',
-          'Prime Location Advantage: Enjoy excellent connectivity and strategic location advantages, ensuring easy access to major highways and nearby destinations.',
-          'World-Class Residences: Discover a wide range of world-class residential options, designed to cater to your unique preferences and needs.',
-          'Recreational and Commercial Facilities: Indulge in a host of recreational amenities and enjoy the convenience of nearby commercial and institutional spaces.',
-          'Future Smart City: Be a part of a future-forward development that embraces smart living concepts and creates a sustainable and inclusive environment.',
-          'Unlock the possibilities at Jaypee Greens Wish Town Agra. Contact us now to explore the wide range of residential options and experience a vibrant and fulfilling lifestyle!',
         ],
       },
     ],

@@ -45,9 +45,8 @@
 }
 
 .cont-container {
-  /* background-color: var(--scnd-color-2); */
   background-color: #efd7d729;
-  padding-top: 8rem;
+  padding-top: 9rem;
   padding-bottom: 4rem;
 }
 
@@ -181,7 +180,7 @@
 .cont-google-map {
   height: 600px;
   z-index: 3;
-  margin-top: -100px;
+  margin-top: 80px;
   padding-bottom: 10rem;
   background-color: var(--sec-bg);
 }

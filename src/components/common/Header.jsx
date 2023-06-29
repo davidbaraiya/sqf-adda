@@ -49,7 +49,7 @@ const Header = () => {
           <Toolbar className="hdr-toolbar" sx={{ padding: '0 !important' }}>
             <Box sx={{ flexGrow: 1 }} className="hdr-logo">
               <Link to="/">
-                <img src={logo2} alt="" />
+                <img src={logo2} alt="logo" />
               </Link>
             </Box>
             <Drawer />
@@ -72,10 +72,18 @@ const Header = () => {
               </NavLink>
               <NavLink
                 className={({ isActive }) => (isActive ? 'activated' : '')}
-                to="/property"
+                to="/property/residential"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Property
+                  Residential
+                </Button>
+              </NavLink>
+              <NavLink
+                className={({ isActive }) => (isActive ? 'activated' : '')}
+                to="/property/commercial"
+              >
+                <Button className={`header-menu-btn`} variant="text">
+                  Commercial
                 </Button>
               </NavLink>
               <NavLink
@@ -87,7 +95,6 @@ const Header = () => {
                 </Button>
               </NavLink>
             </Box>
-            {/* <Button className="hdr-add-listing-btn">Add Listing</Button> */}
           </Toolbar>
         </Container>
       </AppBar>
@@ -100,8 +107,9 @@ export default Header
 const navMenus = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
+  { name: 'Residential', path: '/residential' },
+  { name: 'Commercial', path: '/commercial' },
   { name: 'Contact', path: '/contact' },
-  { name: 'Property', path: '/property' },
 ]
 
 function Drawer() {
@@ -123,7 +131,7 @@ function Drawer() {
 
   const list = anchor => (
     <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 280 }}
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 300 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -152,9 +160,6 @@ function Drawer() {
               to={men.path}
             >
               <ListItemButton>
-                {/* <ListItemIcon>
-                   <CloseIcon /> 
-                  </ListItemIcon> */}
                 <ListItemText primary={men.name} />
               </ListItemButton>
             </NavLink>
@@ -176,19 +181,6 @@ function Drawer() {
       >
         <MenuIcon />
       </IconButton>
-      {/* {openDrawer.left === false ?
-                :
-                <IconButton
-                    onClick={toggleDrawer("left", false)}
-                    className="hdr-appbar-menu"
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                >
-                    <CloseIcon />
-                </IconButton>
-            } */}
       <SwipeableDrawer
         anchor="left"
         open={openDrawer['left']}

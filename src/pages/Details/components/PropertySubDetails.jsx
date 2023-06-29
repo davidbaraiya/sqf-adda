@@ -9,6 +9,8 @@ const PropertySubDetails = () => {
   const { data_id, sub_id } = useParams()
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+
     const filteredData = propertyData.find(e => e.id === parseInt(data_id))
     const matchSubId = filteredData.data.find(e => e.subId === parseInt(sub_id))
     setViewDetails(matchSubId)

@@ -33,12 +33,18 @@ img {
 }
 
 
-.more-details-btn {
+.property-card .more-details-btn {
+  padding: 11px 20px !important;
   margin-top: 15px !important;
   display: inline-block !important;
   text-decoration: none;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400 !important;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important;
 }
 
 
@@ -110,6 +116,10 @@ img {
   padding-top: 80%;
 }
 
+.details-page .img-wrapper a {
+  display: block;
+}
+
 .details-page .img-wrapper img {
   position: absolute;
   left: 0;
@@ -148,6 +158,11 @@ li {
   -ms-border-radius: 5px !important;
   -o-border-radius: 5px !important;
   border: 1px solid transparent !important;
+  text-decoration: none;
+  font-family: var(--nunito-font);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .category-btn:hover,

@@ -17,10 +17,11 @@ import { Fade } from 'react-reveal'
 
 const PropertyDetails = () => {
   const [viewDetails, setViewDetails] = useState(null)
-  const { data_id, category } = useParams()
-  console.log(category)
+  const { data_id } = useParams()
 
   useEffect(() => {
+    window.scrollTo(0, 0)
+
     const filteredData = propertyData.find(e => e.id === parseInt(data_id))
     if (filteredData && !filteredData.data) {
       setViewDetails(filteredData)
@@ -80,10 +81,8 @@ const PropertyDetails = () => {
               </Typography>
               {discription &&
                 discription?.map((para, i) => (
-                  <Fade bottom>
-                    <Typography mt={1} key={i}>
-                      {' - ' + para}{' '}
-                    </Typography>
+                  <Fade bottom key={i}>
+                    <Typography mt={1}>{' - ' + para} </Typography>
                   </Fade>
                 ))}
             </Box>
