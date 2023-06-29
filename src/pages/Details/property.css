@@ -152,7 +152,6 @@ li {
   color: var(--wh-color) !important;
   background-color: var(--scnd-color) !important;
   text-transform: capitalize !important;
-  margin-bottom: 20px;
   -webkit-border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   -ms-border-radius: 5px !important;

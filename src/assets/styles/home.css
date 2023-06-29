@@ -122,7 +122,7 @@
   color: var(--wh-color);
   font-size: 2.5rem !important;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   text-transform: capitalize;
   text-align: center;
 }
@@ -132,12 +132,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem 1.5rem;
 }
 
 .hm-hero-btns-group .home-btn {
-  padding: 10px 25px;
-  font-weight: 700;
+  padding: 10px 22px;
+  font-weight: 600;
   font-size: var(--sm-sz);
   border-radius: 0;
   text-decoration: none;

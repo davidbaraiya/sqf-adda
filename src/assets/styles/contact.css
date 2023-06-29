@@ -50,6 +50,10 @@
   padding-bottom: 4rem;
 }
 
+.cont-container ol li:last-child {
+  margin-left: 5px !important;
+}
+
 .cont-container ol li:first-child {
   margin-left: 0 !important;
 }
@@ -110,8 +114,14 @@
   .cont-head {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     gap: 1rem;
+  }
+
+  .cont-container {
+    background-color: #efd7d729;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
   }
 }
 
