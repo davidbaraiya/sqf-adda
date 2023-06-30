@@ -74,6 +74,7 @@
   position: relative !important;
   text-transform: none !important;
   padding: 5px 0 !important;
+  font-size: 15px !important;
 }
 
 .more-details-btn,
@@ -129,18 +130,18 @@
 }
 
 .lg-font {
-  font-size: 2.75rem !important;
+  font-size: 2.4rem !important;
 }
 
 @media (992px <=width <=1200px) {
   .lg-font {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
 }
 
 @media (768px <=width <=992px) {
   .lg-font {
-    font-size: 2.15rem !important;
+    font-size: 1.8rem !important;
   }
 }
 

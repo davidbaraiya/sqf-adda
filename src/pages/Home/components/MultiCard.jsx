@@ -39,7 +39,7 @@ export default function MultiCard() {
 
         <Grid container spacing={3}>
           {setviceData?.map(({ id, name, desc, img }) => (
-            <Grid item xs={12} md={4} key={id}>
+            <Grid item xs={12} sm={6} md={4} key={id}>
               <Box className="msc-card-container">
                 <Box className="msc-card">
                   <Box className="msc-card-face msc-card-face-1">

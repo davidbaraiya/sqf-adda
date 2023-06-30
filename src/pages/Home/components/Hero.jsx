@@ -70,8 +70,10 @@ export default function Hero() {
           <Box className="hm-hero-up">
             <Fade bottom>
               <Typography variant="h1" className="lg-font">
-                Turning dream <span className="orng-clr"> homes </span> into
-                reality.
+                {/* Turning dream <span className="orng-clr"> homes </span> into
+                reality. */}
+                Unlocking the doors to your <br />
+                <span className="orng-clr"> perfect </span> property
               </Typography>
             </Fade>
             <Fade bottom>

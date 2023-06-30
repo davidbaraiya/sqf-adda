@@ -22,18 +22,18 @@
 }
 
 .lg-font {
-  font-size: 2.75rem !important;
+  font-size: 2.4rem !important;
 }
 
 @media (992px <=width <=1200px) {
   .lg-font {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
   }
 }
 
 @media (768px <=width <=992px) {
   .lg-font {
-    font-size: 2.15rem !important;
+    font-size: 1.8rem !important;
   }
 }
 
@@ -82,12 +82,18 @@
   margin-top: 1rem;
 }
 
-.ftr-explr-section button {
+.ftr-explr-section .btn {
   font-size: var(--sm-sz);
   color: var(--bk-color);
   text-transform: none;
-  padding: 17px 40px;
+  padding: 12px 25px;
   background-color: var(--sec-bg) !important;
+  font-size: 16px !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  font-family: var(--poppins-font) !important;
 }
 
 .ftr-area {

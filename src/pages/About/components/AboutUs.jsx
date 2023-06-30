@@ -38,17 +38,17 @@ export default function AboutUs() {
                   About Us
                 </Typography>
                 <Typography variant="h2" className="lg-font">
-                  Today Sells <span className="highlight-text">Properties</span>
+                  welcome to{' '}
+                  <span className="highlight-text">squarefoot adda</span>
                 </Typography>
                 <Typography>
-                  Welcome to Squarefoot Adda, your one-stop solution for all
-                  your real estate needs. As a leading real estate consultancy
-                  firm, we specialize in providing our clients with the best
-                  possible solutions for buying, selling, and renting properties
-                  in India. Our team of experienced and dedicated professionals
-                  works tirelessly to ensure that you have a hassle-free
-                  experience and find the perfect property that suits your
-                  needs.
+                  Your one-stop solution for all your real estate needs. As a
+                  leading real estate consultancy firm, we specialize in
+                  providing our clients with the best possible solutions for
+                  buying, selling, and renting properties in India. Our team of
+                  experienced and dedicated professionals works tirelessly to
+                  ensure that you have a hassle-free experience and find the
+                  perfect property that suits your needs.
                 </Typography>
                 <Button sx={{ mt: 6 }} className="abt-service-btn">
                   Our Services

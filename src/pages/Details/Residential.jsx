@@ -11,9 +11,9 @@ import BreadCrumbs from '../../components/BreadCrumbs'
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore'
 
 const Commercial = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const BreadCrumbsData = {
     name: 'Residential Property',

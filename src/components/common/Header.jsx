@@ -75,7 +75,7 @@ const Header = () => {
                 to="/property/residential"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Residential
+                  Residential Property
                 </Button>
               </NavLink>
               <NavLink
@@ -83,7 +83,7 @@ const Header = () => {
                 to="/property/commercial"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Commercial
+                  Commercial Property
                 </Button>
               </NavLink>
               <NavLink
@@ -107,8 +107,8 @@ export default Header
 const navMenus = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Residential', path: '/residential' },
-  { name: 'Commercial', path: '/commercial' },
+  { name: 'Residential Property', path: '/property/residential' },
+  { name: 'Commercial Property', path: '/property/commercial' },
   { name: 'Contact', path: '/contact' },
 ]
 
@@ -139,7 +139,7 @@ function Drawer() {
     >
       <Box className="hd-mbl-ico">
         <Link to="/">
-          <img src={logo} alt="" />
+          <img src={logo} alt="img" />
         </Link>
         <IconButton
           onClick={toggleDrawer('left', false)}

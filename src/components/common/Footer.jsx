@@ -37,9 +37,9 @@ const Footer = () => {
                   We can help you realize your dream of a new home
                 </Typography>
               </Box>
-              <Button>
-                Explore Properties &nbsp; <EastIcon />
-              </Button>
+              <Link to="property/residential" className="btn">
+                Explore Properties <EastIcon />
+              </Link>
             </Fade>
           </Container>
         </Box>
@@ -109,13 +109,12 @@ const Footer = () => {
                 <Link to="/">Home</Link>
                 <Link to="/about">About Us</Link>
                 <Link to="/contact">Contact Us</Link>
-                <Link to="/contact">Contact Us</Link>
               </Box>
             </Grid>
             <Grid className="ftr-area-2" item xs={12} sm={6} md={2}>
               <Typography variant="h6">Services</Typography>
               <Box>
-                <Link to="#">Consult Service</Link>
+                <Link to="#">Consultancy  Service</Link>
                 <Link to="#">Property Management</Link>
                 <Link to="#">Renting and Selling</Link>
               </Box>

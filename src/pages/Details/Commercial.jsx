@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom'
 import BreadCrumbs from '../../components/BreadCrumbs'
 
 const Commercial = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const BreadCrumbsData = {
     name: 'Commercial Property',
