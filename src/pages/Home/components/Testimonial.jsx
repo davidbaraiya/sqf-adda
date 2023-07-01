@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Testimonial() {
   return (
-    <Box className="hm-ttl-container">
+    <Box className="hm-ttl-container bg-white">
       <Container>
         <Fade>
           <Box className="hm-ttl-sub-container">

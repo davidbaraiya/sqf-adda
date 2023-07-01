@@ -936,7 +936,7 @@ h6.sec-subtitle {
   box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
   text-align: left;
   border-radius: 10px;
-  background-color: var(--sec-bg);
+  background-color: #f9f9f982;
   border-bottom: 1px solid #ff5a3c;
 }
 

@@ -16,7 +16,7 @@ const Commercial = () => {
   }, [])
 
   const BreadCrumbsData = {
-    name: 'Residential Property',
+    name: 'Residential Properties',
     path: '/property/residential',
   }
 

@@ -35,6 +35,15 @@ h3 {
   margin-bottom: 30px;
 }
 
+.bg-white {
+  background: #fff !important;
+}
+
+.bg-gray {
+  background: #f7f6fc !important;
+}
+
+
 .img-grp .img-wrapper {
   padding: 5px;
   border: 1px solid rgb(0 0 0 / 20%);

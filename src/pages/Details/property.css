@@ -106,9 +106,12 @@ img {
   text-align: center;
 }
 
+.bg-white {
+  background: #fff !important;
+}
 
 .bg-gray {
-  background-color: #f2f6f7;
+  background-color: #f7f6fc !important;
 }
 
 .details-page .img-wrapper {

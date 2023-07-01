@@ -26,39 +26,41 @@ const setviceData = [
 
 export default function MultiCard() {
   return (
-    <Container data-aos="fade-left" className="pb">
-      <Box>
-        <Box sx={{ textAlign: 'center' }} className="hm-ttl-sub-container">
-          <Typography variant="h6" className="sec-subtitle">
-            Speciality
-          </Typography>
-          <Typography variant="h2" className="lg-font">
-            Our Special <span className="highlight-text">features </span>
-          </Typography>
-        </Box>
+    <section className="bg-gray pb pt">
+      <Container data-aos="fade-left">
+        <Box>
+          <Box sx={{ textAlign: 'center' }} className="hm-ttl-sub-container">
+            <Typography variant="h6" className="sec-subtitle">
+              Speciality
+            </Typography>
+            <Typography variant="h2" className="lg-font">
+              Our Special <span className="highlight-text">features </span>
+            </Typography>
+          </Box>
 
-        <Grid container spacing={3}>
-          {setviceData?.map(({ id, name, desc, img }) => (
-            <Grid item xs={12} sm={6} md={4} key={id}>
-              <Box className="msc-card-container">
-                <Box className="msc-card">
-                  <Box className="msc-card-face msc-card-face-1">
-                    <Box className="msc-card-content">
-                      <img src={img} alt={name + 'img'} />
+          <Grid container spacing={3}>
+            {setviceData?.map(({ id, name, desc, img }) => (
+              <Grid item xs={12} sm={6} md={4} key={id}>
+                <Box className="msc-card-container">
+                  <Box className="msc-card">
+                    <Box className="msc-card-face msc-card-face-1">
+                      <Box className="msc-card-content">
+                        <img src={img} alt={name + 'img'} />
+                      </Box>
                     </Box>
-                  </Box>
-                  <Box className="msc-card-face msc-card-face-2">
-                    <Box className="msc-card-content msc-card-content-2">
-                      <h3>{name}</h3>
-                      <p>{desc}</p>
+                    <Box className="msc-card-face msc-card-face-2">
+                      <Box className="msc-card-content msc-card-content-2">
+                        <h3>{name}</h3>
+                        <p>{desc}</p>
+                      </Box>
                     </Box>
                   </Box>
                 </Box>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
-    </Container>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Container>
+    </section>
   )
 }

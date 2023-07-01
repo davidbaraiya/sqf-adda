@@ -75,7 +75,7 @@ const Header = () => {
                 to="/property/residential"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Residential Property
+                  Residential properties
                 </Button>
               </NavLink>
               <NavLink
@@ -83,7 +83,7 @@ const Header = () => {
                 to="/property/commercial"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Commercial Property
+                  Commercial properties
                 </Button>
               </NavLink>
               <NavLink

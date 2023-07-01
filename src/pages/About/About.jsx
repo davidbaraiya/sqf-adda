@@ -21,7 +21,7 @@ export default function About() {
       <BreadCrumbs BreadCrumbsData={BreadCrumbsData} />
       <AboutUs />
       <Services />
-      <Team />
+      {/* <Team /> */}
       <Testimonial />
     </Box>
   )
