@@ -75,7 +75,7 @@ const Header = () => {
                 to="/property/residential"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Residential properties
+                  Residential Properties
                 </Button>
               </NavLink>
               <NavLink
@@ -83,7 +83,7 @@ const Header = () => {
                 to="/property/commercial"
               >
                 <Button className={`header-menu-btn`} variant="text">
-                  Commercial properties
+                  Commercial Properties
                 </Button>
               </NavLink>
               <NavLink
@@ -107,8 +107,8 @@ export default Header
 const navMenus = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
-  { name: 'Residential Property', path: '/property/residential' },
-  { name: 'Commercial Property', path: '/property/commercial' },
+  { name: 'Residential Properties', path: '/property/residential' },
+  { name: 'Commercial Properties', path: '/property/commercial' },
   { name: 'Contact', path: '/contact' },
 ]
 

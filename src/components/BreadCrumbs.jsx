@@ -11,7 +11,7 @@ const BreadCrumbs = ({ BreadCrumbsData }) => {
           <Box className="cont-head">
             <Typography variant="h2">{name}</Typography>
             <Breadcrumbs aria-label="breadcrumb">
-              <Link underline="hover" color="inherit" to="/">
+              <Link underline="hover" to="/" style={{ color: '#ff5a3c' }}>
                 Home
               </Link>
               {/* <Link underline="hover" color="inherit" to={path}>
