@@ -12,6 +12,7 @@ import TermsCondition from './pages/policy/TermsCondition'
 import PrivacyPolicy from './pages/policy/PrivacyPolicy'
 import Residential from './pages/Details/Residential'
 import Commercial from './pages/Details/Commercial'
+import Error from './pages/404/Error'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
           <Route path="/property" element={<Property />} />
           <Route path="/property/residential" element={<Residential />} />
           <Route path="/property/commercial" element={<Commercial />} />

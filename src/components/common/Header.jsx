@@ -152,7 +152,7 @@ function Drawer() {
           <CloseIcon />
         </IconButton>
       </Box>
-      <List className="">
+      <List className="" sx={{ padding: '12px 0 0 !important' }}>
         {navMenus.map((men, index) => (
           <ListItem className="hd-mbl-mnu-list" key={index} disablePadding>
             <NavLink
@@ -160,7 +160,7 @@ function Drawer() {
               to={men.path}
             >
               <ListItemButton>
-                <ListItemText primary={men.name} />
+                <ListItemText  primary={men.name} />
               </ListItemButton>
             </NavLink>
           </ListItem>

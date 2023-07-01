@@ -94,6 +94,7 @@
   gap: 10px;
   text-decoration: none !important;
   font-family: var(--poppins-font) !important;
+  white-space: nowrap;
 }
 
 .ftr-area {

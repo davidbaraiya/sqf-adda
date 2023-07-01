@@ -1,0 +1,29 @@
+.error-page {
+  padding: 120px 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.error-page h2 {
+  font-size: 82px !important;
+  font-weight: 700 !important;
+  color: #ff5a3c;
+  letter-spacing: 5px;
+}
+
+.error-page p {
+  text-transform: capitalize;
+  font-size: 18px !important;
+}
+
+.error-page button {
+  background: #ff5a3c !important;
+  color: #fff !important;
+  padding: 10px 25px !important;
+  margin-top: 30px !important;
+}

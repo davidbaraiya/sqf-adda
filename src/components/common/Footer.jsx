@@ -31,7 +31,7 @@ const Footer = () => {
             <Fade>
               <Box>
                 <Typography variant="h4" className="lg-font">
-                  Looking for a dream home?
+                  Looking for a dream home or office?
                 </Typography>
                 <Typography>
                   We can help you realize your dream of a new home
@@ -114,7 +114,7 @@ const Footer = () => {
             <Grid className="ftr-area-2" item xs={12} sm={6} md={2}>
               <Typography variant="h6">Services</Typography>
               <Box>
-                <Link to="#">Consultancy  Service</Link>
+                <Link to="#">Consultancy Service</Link>
                 <Link to="#">Property Management</Link>
                 <Link to="#">Renting and Selling</Link>
               </Box>
