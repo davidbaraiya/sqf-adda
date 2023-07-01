@@ -100,6 +100,10 @@
   display: none !important;
 }
 
+.hdr-desk-navs a button {
+  text-transform: capitalize !important;
+}
+
 @media (0px <=width <=992px) {
   .hdr-desk-navs {
     display: none;
