@@ -47,6 +47,12 @@ h3 {
   padding-bottom: 30px;
 }
 
+.title-sec h4 {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  color: #838383 !important;
+}
+
 .img-grp .img-wrapper {
   padding: 5px;
   border: 1px solid rgb(0 0 0 / 20%);
