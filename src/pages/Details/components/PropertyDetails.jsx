@@ -58,6 +58,7 @@ const PropertyDetails = () => {
     deliveredProjects,
     ongoingProjects,
     investmentOpportunity,
+    title,
   } = viewDetails
 
   return (
@@ -73,7 +74,26 @@ const PropertyDetails = () => {
             </Fade>
           </Box>
         </Box>
-        <section className="desc-sec pt">
+        {title && (
+          <section className="title-sec pt">
+            <Container>
+              <Box>
+                {/* <Typography variant="h4" className="heading" color={'#ff5a3c'}>
+                title
+              </Typography> */}
+                {title &&
+                  title?.map((title, i) => (
+                    <Fade bottom key={i}>
+                      <Typography variant="h4" mt={1}>
+                        {title}{' '}
+                      </Typography>
+                    </Fade>
+                  ))}
+              </Box>
+            </Container>
+          </section>
+        )}
+        <section className="desc-sec ">
           <Container>
             <Box>
               <Typography variant="h4" className="heading" color={'#ff5a3c'}>
@@ -82,7 +102,7 @@ const PropertyDetails = () => {
               {discription &&
                 discription?.map((para, i) => (
                   <Fade bottom key={i}>
-                    <Typography mt={1}>{' - ' + para} </Typography>
+                    <Typography mt={1}>{para} </Typography>
                   </Fade>
                 ))}
             </Box>

@@ -30,9 +30,11 @@ const residentalData = [
         category: 'residential',
         thumbnail: gulshan1_thumb,
         images: [gulshan4, gulshan5],
-        discription: [
+        title: [
           'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
           'Explore Gulshan Dynasty - Sector 144, Noida',
+        ],
+        discription: [
           'Experience the epitome of luxury at Gulshan Dynasty, an upcoming residential development that sets new standards in sophisticated living. Nestled in Sector 144, Noida, Gulshan Dynasty sprawls across 5.8 acres of land, enveloped by 70% open green space. With its low-density design of only 35 families per acre, this project boasts 3 high-rise towers and 198 meticulously crafted apartments.',
           'Drawing from over 30 years of expertise, Gulshan Dynasty offers a refined living experience like no other. Unwind in air-conditioned apartments equipped with world-class amenities, where attention to detail and comfort are paramount. Indulge in a serene environment that nurtures your mental and physical well-being. ',
           'Connectivity is key, and Gulshan Dynasty seamlessly connects you to major highways, expressways, and airports, ensuring hassle-free travel. The project also features high-speed elevators, enhancing convenience and efficiency for residents.',
@@ -82,6 +84,7 @@ const residentalData = [
       },
     ],
   },
+
   {
     id: 2,
     category: 'residential',
@@ -89,8 +92,10 @@ const residentalData = [
     projectName: 'ATS Knightsbridge',
     thumbnail: ats_thumb,
     images: [ats3, ats4],
-    discription: [
+    title: [
       'Introducing ATS Knightsbridge - A Luxurious Haven in Sector 124, Noida',
+    ],
+    discription: [
       'Welcome to ATS Knightsbridge, a newly launched premium residential project that promises an unparalleled lifestyle. Situated in Sector 124, ATS Knightsbridge offers a sophisticated living experience with world-class amenities. This project provides easy access to essential social infrastructures and enjoys strategic connectivity to the IT hub, making it an ideal choice for discerning homeowners.',
       'Construction at ATS Knightsbridge is progressing rapidly, with phase-wise development underway. The project is projected to be ready for possession by June 2024. Spanning across 6 acres of expansive land, ATS Knightsbridge offers well-designed homes with abundant open spaces, lush greenery, and ample natural light.',
     ],
@@ -130,9 +135,11 @@ const residentalData = [
     projectName: 'County 107',
     thumbnail: county_07_thumb,
     images: [county_07_3, county_07_4, county_07_5],
-    discription: [
+    title: [
       'Welcome to Squarefoot Adda - Your Destination for Real Estate Excellence ',
       'Introducing County107 - Luxury Living at its Finest',
+    ],
+    discription: [
       'Discover the epitome of luxury at County107, located in Sector 107, Noida. Developed by County Group, this project offers a range of 4/5 BHK luxurious flats at affordable prices. With a unique concept in residential development, County107 aims to provide a lifetime of solace and comfort. Surrounded by opulent choices, these homes are designed to elevate your living experience to new heights',
       "At County107, we are committed to achieving IGBC's Platinum Green Building certification. For nature enthusiasts, we offer real timber right on your balcony, creating a natural filter and providing a tranquil environment. Start your day by sipping your morning beverage under the shade of your personal tree. With a no-driveway, no-parking, and no-vehicular movement on the ground approach, you can enjoy the platinum green environment of County107 while unique Golf carts ferry you across the project",
     ],
@@ -186,10 +193,12 @@ const residentalData = [
     category: 'residential',
     projectName: 'Mahagun Manorial',
     thumbnail: mahagun_manorial_thumb,
-    discription: [
+    title: [
       'Welcome to Squarefoot Adda - Your Gateway to Luxurious Real Estate',
-      'Experience Extravagance at Mahagun Manorial',
+    ],
+    discription: [
       'Step into a world of enchantment at Mahagun Manorial, where luxury and elegance redefine your lifestyle. Wake up to breathtaking vistas of rolling green landscapes that stretch as far as the eye can see. The flawless design, graceful architecture, and captivating views of Mahagun Manorial surpass even your wildest imagination. These homes epitomize fine living, adding allure and charm to your everyday life.',
+      'Experience Extravagance at Mahagun Manorial',
     ],
     features: [
       'Panoramic 180-degree vistas of the golf course',
@@ -217,11 +226,13 @@ const residentalData = [
       {
         subId: 1,
         projectName: 'Jaypee Greens',
-        category: 'commercial and residential',
+        category: 'commercial',
         thumbnail: jaypee_green_thumb,
-        discription: [
+        title: [
           'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
           'Discover Jaypee Greens Wish Town - Where Dreams Become Reality',
+        ],
+        discription: [
           'Jaypee Greens Wish Town, located along the Noida-Greater Noida Expressway, is a vibrant and diverse community that brings your wishes to life. Sprawled across approximately 1063 acres, Wish Town combines the essence of sophisticated city living with a warm and friendly neighborhood atmosphere. With excellent connectivity and strategic location advantages, this project is just 5 minutes away from the start of the Noida to Greater Noida Expressway (Mahamaya Flyover), approximately 15 minutes from South Delhi, and around 25 minutes from Central Delhi.',
           "Designed as a progressive and exciting place to live, work, and play, Jaypee Greens Wish Town offers a wide range of residential and commercial properties. It is complemented by an excellent education system, international standard healthcare facilities, multiple shopping arcades, corporate offices, and spiritual centers. Possession has already been offered in multiple apartment projects such as Kalypso Court, Pavilion Court & Heights, Kosmos, and Wish Town Klassic. The seamless integration of the 18+9 Hole Graham Cooke Golf facility with the residential community is fully operational and has already hosted numerous tournaments. As you drive through the streets and neighborhoods of this pedestrian-oriented town, you'll discover a plethora of residential property options, from independent homes to high-rise apartments and penthouses, creating a truly wonderful place to call home.",
         ],
@@ -235,12 +246,14 @@ const residentalData = [
       },
       {
         subId: 2,
-        category: 'commercial',
+        category: 'residential',
         projectName: 'Jaypee Greens Wish Town',
         thumbnail: jaypee_wish_thumb,
-        discription: [
+        title: [
           'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
           'Discover Jaypee Greens Wish Town Agra - Where Dreams Come to Life  ',
+        ],
+        discription: [
           'Jaypee Greens Wish Town Agra is a diverse and progressive township that spans over 505 hectares, combining the essence of sophisticated city living with a warm and friendly neighborhood ambiance.',
           'Immerse yourself in a well-planned picturesque community, adorned with various thematic gardens. This thoughtfully designed township offers an array of world-class residences, recreational facilities, commercial spaces, and institutional spaces. Every aspect of the master plan has been carefully crafted to provide a harmonious and fulfilling living experience.',
           'Nestled at the intersection of NH2 and the 165-kilometer-long Yamuna Expressway, Jaypee Greens Wish Town Agra enjoys excellent connectivity and prime location advantages. It offers seamless accessibility to major highways, ensuring convenient travel to nearby cities and destinations.',
@@ -263,9 +276,11 @@ const residentalData = [
     projectName: 'The Islands by Gaurs',
     thumbnail: gaurs_thumb,
     images: [gaurs5, gaurs6],
-    discription: [
+    title: [
       'Welcome to Squarefoot Adda - Your Gateway to Luxurious Real Estate  ',
       'Discover The Islands by Gaurs in Jaypee Greens, Greater Noida ',
+    ],
+    discription: [
       'When Life and Lifestyle Breathe Luxury - Apartments & Penthouses',
       'Gaurs Group presents a fantasy of luxurious lifestyle combined with nature-friendly and green surroundings. Welcome to Gaur The Islands, a beautiful residential project located in Jaypee Greens, Greater Noida. Sprawling over 3.5 acres at Plot No. B-11, Jaypee Greens, Near Pari Chowk, Greater Noida, this project offers excellent connectivity to the Greater Noida Expressway and Yamuna Expressway. It serves as the perfect driveway to connect you with other areas of the NCR. Surrounded by top-notch corporate houses, commercial centers, and educational institutes, Gaur The Islands enjoys all the conveniences of daily life within close range. Notably, it features a well-maintained 18-hole golf course and a dedicated practice area.',
       'The Islands by Gaur offers 4 BHK & 5 BHK ultra-luxurious apartments and penthouses, meticulously crafted to provide the best possible infrastructure. These residences boast a premium range of personal amenities and fixtures in the interiors. Ranging from 3,681.79 Sq.Ft. to 6,011.26 Sq. Ft., each apartment is designed with rear terraces for personal green spaces and a rooftop party terrace. Enjoy breathtaking views of the lush green golf course from these flats in Greater Noida. In addition to these luxurious living spaces, the project offers a wide range of lifestyle facilities to complement the upscale societies.  ',

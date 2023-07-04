@@ -14,10 +14,12 @@ const commercialData = [
         name: 'gulshan',
         category: 'commercial',
         projectName: 'Gulshan One',
-        thumbnail: gulshan2_thumb,
-        discription: [
+        title: [
           'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
           'Introducing Gulshan One29 - A Captivating Commercial Destination',
+        ],
+        thumbnail: gulshan2_thumb,
+        discription: [
           'Discover Gulshan One29, the first commercial project strategically located at the prime junction of Noida-Greater Noida Expressway, in Sector 129. With its distinctive precincts dedicated to fun, food, fashion, and work, Gulshan One29 offers an unparalleled experience that goes beyond just being a destination. It is nestled amidst high-end residential developments and commercial zones/IT parks, ensuring a thriving environment.',
         ],
         features: [
@@ -39,11 +41,13 @@ const commercialData = [
       {
         subId: 1,
         projectName: 'Jaypee Greens',
-        category: 'residential',
+        category: 'commercial',
         thumbnail: jaypee_green_thumb,
-        discription: [
+        title: [
           'Welcome to Squarefoot Adda - Your Gateway to Exclusive Real Estate Listings',
           'Discover Jaypee Greens Wish Town - Where Dreams Become Reality',
+        ],
+        discription: [
           'Jaypee Greens Wish Town, located along the Noida-Greater Noida Expressway, is a vibrant and diverse community that brings your wishes to life. Sprawled across approximately 1063 acres, Wish Town combines the essence of sophisticated city living with a warm and friendly neighborhood atmosphere. With excellent connectivity and strategic location advantages, this project is just 5 minutes away from the start of the Noida to Greater Noida Expressway (Mahamaya Flyover), approximately 15 minutes from South Delhi, and around 25 minutes from Central Delhi.',
           "Designed as a progressive and exciting place to live, work, and play, Jaypee Greens Wish Town offers a wide range of residential and commercial properties. It is complemented by an excellent education system, international standard healthcare facilities, multiple shopping arcades, corporate offices, and spiritual centers. Possession has already been offered in multiple apartment projects such as Kalypso Court, Pavilion Court & Heights, Kosmos, and Wish Town Klassic. The seamless integration of the 18+9 Hole Graham Cooke Golf facility with the residential community is fully operational and has already hosted numerous tournaments. As you drive through the streets and neighborhoods of this pedestrian-oriented town, you'll discover a plethora of residential property options, from independent homes to high-rise apartments and penthouses, creating a truly wonderful place to call home.",
         ],
@@ -63,9 +67,11 @@ const commercialData = [
     name: 'Sky Bhutani ',
     projectName: 'Sky Bhutani ',
     thumbnail: sky_bhutan_thumb,
-    discription: [
+    title: [
       'Welcome to Squarefoot Adda - Your Ultimate Real Estate Consultancy',
       'Introducing Sky Bhutani - Lounge and Nightclub: Where Luxury Meets Excellence',
+    ],
+    discription: [
       'Sky Bhutani is a masterpiece of exquisite architecture and interior design, setting the stage for the grandest levels of luxury and the highest standards of service. As part of the best commercial property in Noida, this lounge and nightclub also presents an incredible investment opportunity.',
       "Situated on the top floor of Alphathum, one of the tallest commercial towers in Noida, Sky Bhutani offers a mesmerizing view of Noida's skyline. The allure of this ultra-luxurious establishment is further enhanced by its one-of-a-kind infinity pool. As night falls, the pool transforms into a captivating sight with its splendid ambiance and dazzling lights. Sky Bhutani provides connoisseurs of fine dining with a unique opportunity to indulge in culinary excellence and tantalize their taste buds.",
     ],
@@ -86,9 +92,11 @@ const commercialData = [
     name: 'Avenue 62',
     projectName: 'Avenue 62',
     thumbnail: ats_thumb,
-    discription: [
-      'Discover the Future of Retail and Business with 62 Avenue',
+    title: [
       "Welcome to 62 Avenue, a landmark development that's not just about the products or services you find, but the experiences you create. This is retail for the future, and it's ready for you to explore.",
+      'Discover the Future of Retail and Business with 62 Avenue',
+    ],
+    discription: [
       '62 Avenue is a project by Bhutani Group, a renowned name in the real estate industry. With a portfolio that includes successful projects like Techno Park, Alphathum, and The I-THUM, Bhutani Group has a proven track record of delivering world-class commercial spaces.',
     ],
     deliveredProjects: [
