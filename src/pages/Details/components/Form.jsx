@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import {
   TextField,
   Checkbox,
@@ -8,9 +8,9 @@ import {
   Typography,
 } from '@mui/material'
 import './form.css'
+import { toast } from 'react-toastify'
 
 const Form = ({ projectName }) => {
-  console.log(projectName)
   const [userData, setUserData] = useState([])
   const [formData, setFormData] = useState({
     name: '',
@@ -56,6 +56,10 @@ const Form = ({ projectName }) => {
         email: '',
         phone: '',
         agree: false,
+        // projectName: '',
+      })
+      toast.success('Form submitted successfully!', {
+        autoClose: 2000,
       })
     } else {
       setErrors(validationErrors)
@@ -155,7 +159,7 @@ const Form = ({ projectName }) => {
         <Button type="submit" variant="contained" color="primary">
           Submit
         </Button>
-    </form>
+      </form>
     </Box>
   )
 }
