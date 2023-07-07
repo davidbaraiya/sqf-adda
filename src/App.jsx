@@ -13,6 +13,7 @@ import PrivacyPolicy from './pages/policy/PrivacyPolicy'
 import Residential from './pages/Details/Residential'
 import Commercial from './pages/Details/Commercial'
 import Error from './pages/404/Error'
+import FormDetail from './pages/Details/components/UserDetails'
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             path="/residential/property_details/:data_id/:sub_id"
             element={<PropertySubDetails />}
           />
+          <Route path="/user_details" element={<FormDetail />} />
         </Routes>
         <Footer />
       </Router>

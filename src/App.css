@@ -47,9 +47,13 @@ h3 {
   padding-bottom: 30px;
 }
 
-.title-sec h4 {
+.title-sec .title-wrapper .title {
   font-size: 24px !important;
   font-weight: 400 !important;
+  color: #ff5a3c !important;
+}
+
+.title-sec .title-wrapper:not(:first-of-type) .title {
   color: #838383 !important;
 }
 

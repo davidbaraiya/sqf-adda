@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import { useParams } from 'react-router-dom'
 import { Fade } from 'react-reveal'
 import propertyData from '../propertyData'
+import Form from './Form'
 
 const PropertySubDetails = () => {
   const [viewDetails, setViewDetails] = useState(null)
@@ -65,11 +66,13 @@ const PropertySubDetails = () => {
               </Typography> */}
                 {title &&
                   title?.map((title, i) => (
-                    <Fade bottom key={i}>
-                      <Typography variant="h4" mt={1}>
-                        {title}{' '}
-                      </Typography>
-                    </Fade>
+                    <div className="title-wrapper">
+                      <Fade bottom key={i}>
+                        <Typography className="title" mt={1}>
+                          {title}{' '}
+                        </Typography>
+                      </Fade>
+                    </div>
                   ))}
               </Box>
             </Container>
@@ -241,6 +244,13 @@ const PropertySubDetails = () => {
             </Container>
           </section>
         )}
+        <section className="bg-gray pt pb" style={{ marginBottom: '50px' }}>
+          <Container>
+            <div>
+              <Form projectName={projectName} />
+            </div>
+          </Container>
+        </section>
       </Box>
     </>
   )

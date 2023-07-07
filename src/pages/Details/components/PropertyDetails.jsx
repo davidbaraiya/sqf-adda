@@ -14,6 +14,7 @@ import {
 import { useParams } from 'react-router-dom'
 import propertyData from '../propertyData'
 import { Fade } from 'react-reveal'
+import Form from './Form'
 
 const PropertyDetails = () => {
   const [viewDetails, setViewDetails] = useState(null)
@@ -83,11 +84,13 @@ const PropertyDetails = () => {
               </Typography> */}
                 {title &&
                   title?.map((title, i) => (
-                    <Fade bottom key={i}>
-                      <Typography variant="h4" mt={1}>
-                        {title}{' '}
-                      </Typography>
-                    </Fade>
+                    <div className="title-wrapper" key={i}>
+                      <Fade bottom key={i}>
+                        <Typography className="title" mt={1}>
+                          {title}{' '}
+                        </Typography>
+                      </Fade>
+                    </div>
                   ))}
               </Box>
             </Container>
@@ -462,6 +465,13 @@ const PropertyDetails = () => {
           </section>
         )}
       </Box>
+      <section className="bg-gray pt pb" style={{ marginBottom: '50px' }}>
+        <Container>
+          <div>
+            <Form projectName={projectName} />
+          </div>
+        </Container>
+      </section>
     </>
   )
 }
