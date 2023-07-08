@@ -28,3 +28,7 @@ label.Mui-focused {
   background-color: #F44336;
   color: #fff;
 }
+
+tbody tr:hover {
+  background: #d9d9d94d !important;
+}

@@ -16,7 +16,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import CancelIcon from '@mui/icons-material/Cancel'
 import axios from 'axios'
 
-const dbUrl = 'https://sqf-adda-1876c-default-rtdb.firebaseio.com'
+const dbUrl = 'https://squarefoot-adda-default-rtdb.firebaseio.com/'
 
 const UserDetails = () => {
   const [userData, setUserData] = useState([])
@@ -33,7 +33,7 @@ const UserDetails = () => {
       const response = await axios.get(`${dbUrl}/userdata.json`)
       if (response.data) {
         const fetchedData = Object.values(response.data)
-        setUserData(fetchedData.reverse()) // Reverse the order of userData array
+        setUserData(fetchedData.reverse())
       }
     } catch (error) {
       console.error('Failed to fetch data:', error)
