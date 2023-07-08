@@ -66,8 +66,8 @@ const PropertySubDetails = () => {
               </Typography> */}
                 {title &&
                   title?.map((title, i) => (
-                    <div className="title-wrapper">
-                      <Fade bottom key={i}>
+                    <div className="title-wrapper" key={i}>
+                      <Fade bottom>
                         <Typography className="title" mt={1}>
                           {title}{' '}
                         </Typography>
@@ -86,10 +86,8 @@ const PropertySubDetails = () => {
               </Typography>
               {discription &&
                 discription?.map((para, i) => (
-                  <Fade bottom>
-                    <Typography mt={1} key={i}>
-                      {para}
-                    </Typography>
+                  <Fade bottom key={i}>
+                    <Typography mt={1}>{para}</Typography>
                   </Fade>
                 ))}
             </Box>
@@ -110,10 +108,8 @@ const PropertySubDetails = () => {
                       Highlights
                     </Typography>
                     {highlights?.map((highlight, i) => (
-                      <Fade bottom>
-                        <Typography mt={1} key={i}>
-                          {highlight}
-                        </Typography>
+                      <Fade bottom key={i}>
+                        <Typography mt={1}>{highlight}</Typography>
                       </Fade>
                     ))}
                   </Grid>
@@ -150,10 +146,8 @@ const PropertySubDetails = () => {
                       Indoor Amenities:
                     </Typography>
                     {amenities.indoor?.map((indoor, i) => (
-                      <Fade bottom>
-                        <Typography mt={1} key={i}>
-                          {`${i + 1}. ${indoor}`}
-                        </Typography>
+                      <Fade bottom key={i}>
+                        <Typography mt={1}>{`${i + 1}. ${indoor}`}</Typography>
                       </Fade>
                     ))}
                   </Grid>
@@ -167,10 +161,8 @@ const PropertySubDetails = () => {
                       Outdoor Amenities:
                     </Typography>
                     {amenities.outdoor?.map((outdoor, i) => (
-                      <Fade bottom>
-                        <Typography mt={1} key={i}>
-                          {`${i + 1}. ${outdoor}`}
-                        </Typography>
+                      <Fade bottom key={i}>
+                        <Typography mt={1}>{`${i + 1}. ${outdoor}`}</Typography>
                       </Fade>
                     ))}
                   </Grid>

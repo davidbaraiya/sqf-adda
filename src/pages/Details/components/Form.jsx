@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState } from 'react'
 import {
   TextField,
   Checkbox,
@@ -9,9 +9,11 @@ import {
 } from '@mui/material'
 import './form.css'
 import { toast } from 'react-toastify'
+import axios from 'axios'
+
+const dbUrl = 'https://sqf-adda-1876c-default-rtdb.firebaseio.com/'
 
 const Form = ({ projectName }) => {
-  const [userData, setUserData] = useState([])
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,46 +23,27 @@ const Form = ({ projectName }) => {
   })
   const [errors, setErrors] = useState({})
 
-  console.log(userData)
-
-  useEffect(() => {
-    const storedUserData = localStorage.getItem('userData')
-    if (storedUserData) {
-      setUserData(JSON.parse(storedUserData))
-    }
-  }, [])
-
-  useEffect(() => {
-    localStorage.setItem('userData', JSON.stringify(userData))
-  }, [userData])
-
-  useEffect(() => {
-    const storedFormData = localStorage.getItem('formData')
-    if (storedFormData) {
-      setFormData(JSON.parse(storedFormData))
-    }
-  }, [])
-
-  useEffect(() => {
-    localStorage.setItem('formData', JSON.stringify(formData))
-  }, [formData])
-
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
     const validationErrors = validateForm(formData)
     if (Object.keys(validationErrors).length === 0) {
       setErrors({})
-      setUserData(prevUserData => [...prevUserData, formData])
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        agree: false,
-        // projectName: '',
-      })
-      toast.success('Form submitted successfully!', {
-        autoClose: 2000,
-      })
+
+      try {
+        await axios.post(`${dbUrl}/userdata.json`, formData)
+        toast.success('Form submitted successfully!', {
+          autoClose: 2000,
+        })
+        setFormData(prevFormData => ({
+          ...prevFormData,
+          name: '',
+          email: '',
+          phone: '',
+          agree: false,
+        }))
+      } catch (error) {
+        toast.error('Failed to submit the form. Please try again later.')
+      }
     } else {
       setErrors(validationErrors)
     }
@@ -108,10 +91,10 @@ const Form = ({ projectName }) => {
 
   return (
     <Box className="form-wrapper">
-      <Typography variant="h4" component={'h4'} mb={2} color="#ff5a3c">
+      <Typography variant="h4" component="h4" mb={2} color="#ff5a3c">
         Submit Your Details
       </Typography>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} method="POST">
         <TextField
           label="Name"
           name="name"
