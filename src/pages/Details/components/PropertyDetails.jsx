@@ -465,7 +465,7 @@ const PropertyDetails = () => {
           </section>
         )}
       </Box>
-      <section className="bg-gray pt pb" style={{ marginBottom: '50px' }}>
+      <section className="bg-gray pt pb" style={{ marginBottom: '150px' }}>
         <Container>
           <div>
             <Form projectName={projectName} />

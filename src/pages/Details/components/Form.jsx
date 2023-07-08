@@ -124,6 +124,17 @@ const Form = ({ projectName }) => {
           onChange={handleFormData}
           fullWidth
           margin="normal"
+          InputProps={{
+            sx: {
+              '&:hover': {
+                borderColor: 'initial',
+              },
+              '&:focus': {
+                borderColor: 'initial',
+                boxShadow: 'none',
+              },
+            },
+          }}
           required
           error={!!errors.phone}
           helperText={errors.phone}
@@ -134,7 +145,12 @@ const Form = ({ projectName }) => {
               name="agree"
               checked={formData.agree}
               onChange={handleFormData}
-              color="primary"
+              sx={{
+                color: '#ff5a3c',
+                '&.Mui-checked': {
+                  color: '#ff5a3c',
+                },
+              }}
             />
           }
           label="I agree to receive a call from the sales team on this number"
