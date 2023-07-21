@@ -175,7 +175,97 @@ li {
   border-color: #ffffff9e !important;
   background-color: var(--scnd-color) !important;
   color: #fff !important;
+}
 
+.monsoon-offer-sec .bottom-div {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.monsoon-offer-sec .offer-logo {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  mix-blend-mode: darken;
+}
+
+.monsoon-offer-sec .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.monsoon-offer-sec .right-side .payment-plan {
+  margin-top: 40px;
+}
+
+.monsoon-offer-sec .price-div .price,
+.monsoon-offer-sec .right-side .payment-plan>span {
+  background-color: #ff5a3c;
+  padding: 10px 15px;
+  display: block;
+  font-size: 32px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.bottom-div .title {
+  padding: 10px 15px;
+  background-color: #ff5a3c;
+  margin-bottom: 20px;
+  clip-path: polygon(0 0%, 90% 0, 100% 100%, 0% 100%);
+  border-radius: 0 5px 5px 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.bottom-div ul li {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  list-style: none;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.bottom-div .benefit-div {
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  border: 1px solid rgb(255 255 255 / 30%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bottom-div .benefit-div .name {
+  color: #ff5a3c;
+  margin-top: 10px !important;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom-div .benefit-div .img-wrapper {
+  padding-top: 50%;
+  min-height: 100% !important;
+}
+
+.bottom-div .benefit-div .img-wrapper img {
+  object-fit: scale-down !important;
+  transition: all 0.4s ease-in-out;
+  min-height: 100% !important;
+}
+
+.bottom-div .benefit-div:hover img {
+  transform: scale(1.2);
 }
 
 @media (max-width :991px) {
@@ -193,11 +283,19 @@ li {
     height: 300px;
   }
 
+  .payment-plan h4,
+  .price-div h4 {
+    font-size: 20px !important;
+  }
 }
 
 @media (max-width :768px) {
   .property-card>div {
     flex-direction: column !important;
+  }
+
+  .monsoon-offer-sec .right-side {
+    margin-top: 40px;
   }
 
   .inner-text h3 {
@@ -209,6 +307,9 @@ li {
     font-size: 24px !important;
   }
 
+  .bottom-div ul li {
+    font-size: 16px;
+  }
 
   .property-card .desc {
     display: -webkit-box;
@@ -227,8 +328,32 @@ li {
   }
 }
 
+@media (max-width :599px) {
+  .monsoon-offer-sec .right-side .payment-plan {
+    margin-top: 30px;
+  }
+
+  .top-div .left-side {
+    margin-bottom: 30px;
+  }
+
+  .monsoon-offer-sec .right-side {
+    margin-top: 0;
+  }
+
+  .monsoon-offer-sec .bottom-div {
+    padding: 50px 0;
+  }
+}
+
 @media (max-width :500px) {
   .banner {
     height: 450px !important;
+  }
+
+  .benefit-container .MuiGrid-item {
+    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }

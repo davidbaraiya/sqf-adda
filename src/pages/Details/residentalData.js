@@ -2,7 +2,6 @@
 import gulshan1_thumb from '../../assets/images/property/gulshan/gulshan-dynasty/thumbnail.jpg'
 import gulshan4 from '../../assets/images/property/gulshan/gulshan-dynasty/g4.jpg'
 import gulshan5 from '../../assets/images/property/gulshan/gulshan-dynasty/g5.jpg'
-import gulshan2_thumb from '../../assets/images/property/gulshan/gulshan-one/thumbnail.png'
 import ats_thumb from '../../assets/images/property/ats/thumbnail.jpg'
 import ats3 from '../../assets/images/property/ats/ats3.jpg'
 import ats4 from '../../assets/images/property/ats/ats4.jpg'
@@ -16,8 +15,10 @@ import jaypee_wish_thumb from '../../assets/images/property/jaypee/wish-town/thu
 import gaurs_thumb from '../../assets/images/property/guar/thumbnail.jpg'
 import gaurs5 from '../../assets/images/property/guar/Gaur5.jpg'
 import gaurs6 from '../../assets/images/property/guar/Gaur6.jpg'
-import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
-// import avenue_62_thumb from '../../assets/images/property/'
+import m3m_content_thumb from '../../assets/images/property/M3M-content/thumbnail.webp'
+import m3m_content_1 from '../../assets/images/property/M3M-content/m3m-content-1.webp'
+import m3m_content_2 from '../../assets/images/property/M3M-content/m3m-content-2.webp'
+import m3m_content_3 from '../../assets/images/property/M3M-content/m3m-content-3.webp'
 
 const residentalData = [
   {
@@ -84,7 +85,6 @@ const residentalData = [
       },
     ],
   },
-
   {
     id: 2,
     category: 'residential',
@@ -311,6 +311,77 @@ const residentalData = [
       'Library',
       'Conference Room',
     ],
+  },
+  {
+    id: 9,
+    category: 'residential',
+    name: 'M3M Content',
+    projectName: 'M3M Content',
+    thumbnail: m3m_content_thumb,
+    images: [m3m_content_1, m3m_content_2, m3m_content_3],
+    title: [
+      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+      'Explore M3M The Cullinan- Sector 94, Noida',
+    ],
+    discription: [
+      'M3M, the leading real estate developer, has announced its latest residential property project in Noida sector 94. The project is spread over 12.858 acres of land and offers world-class amenities and facilities. The residential project comprises luxurious apartments ranging from 3.5,4.5 & 5.5 BHK. The apartments are designed with contemporary architecture and offer stunning views of the city. The project also includes a range of amenities such as a clubhouse, gymnasium, swimming pool, jogging track, and landscaped gardens.',
+    ],
+
+    priceList: [
+      {
+        type: '3.5 BHK Apartments',
+        size: '3200 Sq. Ft.',
+        price: '₹5.85 Cr* Onwards',
+      },
+      {
+        type: '4.5 BHK Apartments',
+        size: '4200 Sq. Ft.',
+        price: '₹7.76 Cr* Onwards',
+      },
+      {
+        type: '5.5 BHK Apartments',
+        size: '5800 Sq. Ft.',
+        price: '₹10.72 Cr* Onwards',
+      },
+    ],
+
+    amenities: [
+      'GYMNASIUM',
+      'CLUB HOUSE',
+      'SWIMMING POOL',
+      'JOGGING TRACK',
+      'LANDSCAPED GARDENS',
+      'HIGH-STREET RETAIL SHOPS',
+      'MINI MULTIPLEX',
+      'FOOD COURT',
+    ],
+
+    highlights: [
+      'Easy Connectivity to Major Locations in Noida and Delhi',
+      'Close Proximity to Metro Station, Bus Stop, and Major Highways',
+      'Wide Range of Amenities and Facilities',
+      'Designed with Contemporary Architecture and Stunning Views of the City',
+      'Seamless Shopping Experience for Customers',
+      'Entertainment and Dining Options for Visitors',
+      '24/7 Security and Power Backup for Safety and Comfort',
+    ],
+    locationAdvantage: {
+      connectivity: [
+        'Noida, Greater Noida Expressway - 5 mins* Drive',
+        'Sector 18 Market - 10 mins* Drive',
+        '0 km from Delhi',
+        'Akshardham Temple - 20 mins* Drive',
+        'Nearest Metro: Okhla Bird Sanctuary',
+        'IT companies nearby',
+        'Indira Gandhi International Airport - 45 mins* Drive',
+      ],
+    },
+    monsoonOffer: true,
+    developer: {
+      name: 'M3M stands',
+      description:
+        'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
+    },
   },
 ]
 

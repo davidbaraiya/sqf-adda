@@ -16,7 +16,12 @@ import gaurs_thumb from '../../assets/images/property/guar/thumbnail.jpg'
 import gaurs5 from '../../assets/images/property/guar/Gaur5.jpg'
 import gaurs6 from '../../assets/images/property/guar/Gaur6.jpg'
 import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
-// import avenue_62_thumb from '../../assets/images/property/'
+import m3m_content_thumb from '../../assets/images/property/M3M-content/thumbnail.webp'
+import m3m_content_1 from '../../assets/images/property/M3M-content/m3m-content-1.webp'
+import m3m_content_2 from '../../assets/images/property/M3M-content/m3m-content-2.webp'
+import m3m_content_3 from '../../assets/images/property/M3M-content/m3m-content-3.webp'
+import m3m_content_4 from '../../assets/images/property/M3M-content/m3m-content-4.webp'
+import m3m_content_5 from '../../assets/images/property/M3M-content/m3m-content-5.webp'
 
 const propertyData = [
   {
@@ -386,6 +391,159 @@ const propertyData = [
 
     investmentOpportunity:
       'Investments are subject to market risks. Read the offer document carefully before investing. The pictures and details are tentative depictions only. Mentioned features are indicative and are subject to change without any prior notice as may be decided by the company or competent authority.',
+  },
+  {
+    id: 9,
+    category: 'residential',
+    name: 'M3M Content',
+    projectName: 'M3M Content',
+    thumbnail: m3m_content_thumb,
+    images: [m3m_content_1, m3m_content_2, m3m_content_3],
+    title: [
+      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+      'Explore M3M The Cullinan- Sector 94, Noida',
+    ],
+    discription: [
+      'M3M, the leading real estate developer, has announced its latest residential property project in Noida sector 94. The project is spread over 12.858 acres of land and offers world-class amenities and facilities. The residential project comprises luxurious apartments ranging from 3.5,4.5 & 5.5 BHK. The apartments are designed with contemporary architecture and offer stunning views of the city. The project also includes a range of amenities such as a clubhouse, gymnasium, swimming pool, jogging track, and landscaped gardens.',
+    ],
+
+    priceList: [
+      {
+        type: '3.5 BHK Apartments',
+        size: '3200 Sq. Ft.',
+        price: '₹5.85 Cr* Onwards',
+      },
+      {
+        type: '4.5 BHK Apartments',
+        size: '4200 Sq. Ft.',
+        price: '₹7.76 Cr* Onwards',
+      },
+      {
+        type: '5.5 BHK Apartments',
+        size: '5800 Sq. Ft.',
+        price: '₹10.72 Cr* Onwards',
+      },
+    ],
+
+    amenities: [
+      'GYMNASIUM',
+      'CLUB HOUSE',
+      'SWIMMING POOL',
+      'JOGGING TRACK',
+      'LANDSCAPED GARDENS',
+      'HIGH-STREET RETAIL SHOPS',
+      'MINI MULTIPLEX',
+      'FOOD COURT',
+    ],
+
+    highlights: [
+      'Easy Connectivity to Major Locations in Noida and Delhi',
+      'Close Proximity to Metro Station, Bus Stop, and Major Highways',
+      'Wide Range of Amenities and Facilities',
+      'Designed with Contemporary Architecture and Stunning Views of the City',
+      'Seamless Shopping Experience for Customers',
+      'Entertainment and Dining Options for Visitors',
+      '24/7 Security and Power Backup for Safety and Comfort',
+    ],
+    locationAdvantage: {
+      connectivity: [
+        'Noida, Greater Noida Expressway - 5 mins* Drive',
+        'Sector 18 Market - 10 mins* Drive',
+        '0 km from Delhi',
+        'Akshardham Temple - 20 mins* Drive',
+        'Nearest Metro: Okhla Bird Sanctuary',
+        'IT companies nearby',
+        'Indira Gandhi International Airport - 45 mins* Drive',
+      ],
+    },
+    monsoonOffer: true,
+    developer: {
+      name: 'M3M stands',
+      description:
+        'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
+    },
+  },
+  {
+    id: 10,
+    category: 'commercial',
+    name: 'M3M Content',
+    projectName: 'M3M Content',
+    thumbnail: m3m_content_thumb,
+    images: [
+      m3m_content_1,
+      m3m_content_2,
+      m3m_content_3,
+      m3m_content_4,
+      m3m_content_5,
+    ],
+    title: [
+      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+      'Explore M3M The Cullinan- Sector 94, Noida',
+    ],
+    discription: [
+      'M3M, the leading real estate developer, has announced its latest commercial project in Noida sector 94. The project is spread over 17.5 acres of land and offers world-class amenities and facilities. The commercial project comprises high-street retail shops, multiplexes, food courts, and office spaces. The project is designed to offer a seamless experience to its customers with ample parking spaces, 24/7 security, and power backup.',
+    ],
+
+    priceList: [
+      {
+        type: 'Type 1',
+        size: '600-2000 sqft',
+        price: '1 cr* onwards',
+        floorType: 'Lower Ground',
+      },
+      {
+        type: 'Type 2',
+        size: '700-2000 sqft',
+        price: '2.25 Cr* onwards',
+        floorType: 'Ground Floor',
+      },
+      {
+        type: 'Type 3',
+        size: '600-2000 sqft',
+        price: '1.65 Cr* onwards',
+        floorType: 'First Floor',
+      },
+      {
+        type: 'Type 4',
+        size: 'On request',
+        price: '1.45 Cr* onwards',
+        floorType: 'Second Floor',
+      },
+      {
+        type: 'Type 5',
+        size: 'On request',
+        price: '1.25 Cr* Onwards',
+        floorType: 'Third Floor',
+      },
+    ],
+
+    highlights: [
+      'Offering Easy Connectivity To Major Locations In Noida And Delhi.',
+      'Close Proximity To The Metro Station, Bus Stop, And Major Highways.',
+      'Offering A Wide Range Of Amenities And Facilities.',
+      'Designed With Contemporary Architecture And Offer Stunning Views Of The City.',
+      'Offering A Seamless Shopping Experience To Customers.',
+      'Providing Entertainment And Dining Options To Visitors.',
+      '24/7 Security And Power Backup, Ensuring Safety And Comfort.',
+    ],
+    locationAdvantage: {
+      connectivity: [
+        'On Noida, Greater Noida Expressway - 5 mins* Drive',
+        'Sector 18 Market - 10 mins* Drive',
+        '0 km from Delhi',
+        'Akshardham Temple - 20 mins* Drive',
+        'Nearest Metro: Okhla Bird Sanctuary',
+        'IT companies nearby',
+        'Indira Gandhi International Airport - 45 mins* Drive',
+      ],
+    },
+
+    CommercialMonsoonOffer: true,
+    developer: {
+      name: 'M3M stands',
+      description:
+        'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
+    },
   },
 ]
 
