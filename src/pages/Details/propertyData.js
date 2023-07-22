@@ -22,6 +22,10 @@ import m3m_content_2 from '../../assets/images/property/M3M-content/m3m-content-
 import m3m_content_3 from '../../assets/images/property/M3M-content/m3m-content-3.webp'
 import m3m_content_4 from '../../assets/images/property/M3M-content/m3m-content-4.webp'
 import m3m_content_5 from '../../assets/images/property/M3M-content/m3m-content-5.webp'
+import godrej_thumb from '../../assets/images/property/godrej-146/thumbnail.jpg'
+import godrej_1 from '../../assets/images/property/godrej-146/godrej-1.jpg'
+import godrej_2 from '../../assets/images/property/godrej-146/godrej-2.jpg'
+import godrej_3 from '../../assets/images/property/godrej-146/godrej-3.jpg'
 
 const propertyData = [
   {
@@ -543,6 +547,79 @@ const propertyData = [
       name: 'M3M stands',
       description:
         'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
+    },
+  },
+  {
+    id: 11,
+    category: 'residential',
+    name: 'Godrej 146',
+    projectName: 'Godrej 146',
+    thumbnail: godrej_thumb,
+    images: [godrej_1, godrej_2, godrej_3],
+    title: [
+      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+      'Explore Godrej 146 - Sector 146, Noida',
+    ],
+    discription: [
+      "Godrej 146 Noida is a pre-launched residential property project located in the heart of Noida. This project is being developed by Godrej Properties, one of India's well-known real estate company. The residential project will offer luxurious 3 and 4 BHK apartments in Noida with different sizes and configurations to choose from. Each luxurious flat will be thoughtfully planned with big areas and modern facilities for a smooth and luxurious experience",
+    ],
+
+    priceList: [
+      {
+        type: '3 BHK',
+        size: '1800 Sq Ft',
+        price: '2.99 Cr* Onwards',
+      },
+      {
+        type: '3.5 BHK',
+        size: '2500 Sq Ft',
+        price: 'on request',
+      },
+      {
+        type: '4 BHK',
+        size: '3250 Sq Ft',
+        price: 'on request',
+      },
+    ],
+
+    amenities: [
+      'Swimming Pool',
+      'Golf Course',
+      'Clubhouse',
+      'Gymnasium',
+      'Jogging Track',
+      'Yoga & Meditation',
+      'Kids Play Area',
+    ],
+
+    highlights: [
+      'Spread across 12.5 acres',
+      '3 & 4 BHK High-quality Homes',
+      'Strategic Location',
+      'Eco-friendly Homes',
+      'Grand entrance with high-tech amenities',
+      'Air-purification technology to provide fresh air in homes',
+      'Secured gated township with 5-tier security systems',
+      'Modular kitchen, VRV, imported marbles.',
+      'Expressway facing apartments',
+      'Only 4 apartments per floor',
+    ],
+    locationAdvantage: {
+      connectivity: [
+        'Bang on Noida expressway',
+        'Close to Noida sector 146 metro station',
+        '30 mins drive to upcoming Jewar airport',
+        '18 Mins from Mahamaya flyover',
+        'Well connected by major roads - Dadri road, Noida-Greater-Noida road',
+        'Near upcoming international cricket stadium',
+        '10 mins drive to knowledge parks - 1, 2, 3',
+        'Close to schools, Hospitals, and Shopping Hubs',
+      ],
+    },
+    developer: {
+      name: 'Godrej 146 ',
+      description:
+        'Godrej 146 Noida is a pre-launched residential project located in the heart of Noida.',
     },
   },
 ]

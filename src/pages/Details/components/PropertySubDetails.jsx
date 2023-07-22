@@ -286,7 +286,7 @@ const PropertySubDetails = () => {
                   </Grid>
                 </Grid>
               </Box>
-            </Container>
+            </Container>    
             <Box
               sx={{ marginTop: { xs: '40px', sm: '80px' } }}
               className="bottom-div"
