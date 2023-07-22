@@ -315,8 +315,8 @@ const residentalData = [
   {
     id: 9,
     category: 'residential',
-    name: 'M3M Content',
-    projectName: 'M3M Content',
+    name: 'M3M cullinan',
+    projectName: 'M3M cullinan',
     thumbnail: m3m_content_thumb,
     images: [m3m_content_1, m3m_content_2, m3m_content_3],
     title: [
