@@ -92,7 +92,6 @@ const PropertyCard = ({ flexDirection, property }) => {
             className="more-details-btn"
           >
             More Details
-            {/* <ChevronRightIcon /> */}
           </Link>
         </CardContent>
       </Box>

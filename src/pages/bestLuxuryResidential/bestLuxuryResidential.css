@@ -1,0 +1,52 @@
+.best-luxury-residential .top-heading {
+  position: relative;
+  background: url('../../assets/images/JaypeeGreens1.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0;
+  z-index: 2;
+}
+
+.best-luxury-residential .top-heading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 55%);
+  clip-path: polygon(0 0, 50% 0, 75% 100%, 0% 100%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(2px);
+}
+
+.top-heading .title {
+  max-width: 600px;
+  width: 100%;
+  color: #fff;
+}
+
+
+
+
+.best-luxury-residential h4 {
+  text-transform: capitalize;
+}
+
+.best-luxury-residential h5 {
+  font-weight: 600;
+}
+
+.best-luxury-residential h6 {
+  margin-top: 0 !important;
+  line-height: 1.2 !important;
+}
+
+
+@media (max-width:768px) {
+  .best-luxury-residential .top-heading::before {
+    clip-path: none;
+  }
+}

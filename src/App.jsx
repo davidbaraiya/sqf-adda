@@ -14,6 +14,7 @@ import Residential from './pages/Details/Residential'
 import Commercial from './pages/Details/Commercial'
 import Error from './pages/404/Error'
 import FormDetail from './pages/Details/components/UserDetails'
+import BestLuxuryResidential from './pages/bestLuxuryResidential/BestLuxuryResidential'
 
 function App() {
   return (
@@ -40,6 +41,10 @@ function App() {
             element={<PropertySubDetails />}
           />
           <Route path="/user_details" element={<FormDetail />} />
+          <Route
+            path="/best_luxury_residential"
+            element={<BestLuxuryResidential />}
+          />
         </Routes>
         <Footer />
       </Router>

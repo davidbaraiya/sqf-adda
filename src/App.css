@@ -78,6 +78,52 @@ swiper-slide {
   height: auto !important;
 }
 
+.merquee {
+  position: absolute;
+  width: 100%;
+  top: 68px;
+  background-color: #ff5a3c;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+  z-index: 101;
+  text-transform: capitalize;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.merquee .delete-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent !important;
+  color: #fff;
+  min-width: unset;
+}
+
+.merquee p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.merquee button:not(.merquee .delete-btn) {
+  background-color: #333 !important;
+}
+
+.merquee button:hover:not(.delete-btn) {
+  background-color: #222 !important;
+}
+
+.merquee button a {
+  color: #fff !important;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 
 @media (max-width:768px) {
   .cont-head h2 {
