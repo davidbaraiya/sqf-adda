@@ -28,11 +28,7 @@ const LuxuryCard = ({ luxuryData }) => {
           <Typography sx={{ marginBottom: '20px' }} variant="h6" component="h6">
             {title}
           </Typography>
-          <Typography
-            className="desc"
-            component="p"
-            sx={{ marginBottom: '10px' }}
-          >
+          <Typography className="desc" component="p">
             {description}
           </Typography>
           {/* <Link

@@ -72,7 +72,7 @@ export default function Hero() {
           {visibleMarquee ? (
             <div className="merquee">
               <Typography>
-                visit a top 5 best luxury residential property
+                Read : the 5 best luxury residential projects
                 <Button variant="contained">
                   <Link to="/best_luxury_residential">Click Here</Link>
                 </Button>
