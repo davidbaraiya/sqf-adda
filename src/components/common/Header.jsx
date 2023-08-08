@@ -70,7 +70,30 @@ const Header = () => {
                   About
                 </Button>
               </NavLink>
-              <NavLink
+
+              <NavLink className="dd-link">
+                <Button className={`header-menu-btn`} variant="text">
+                  <span>Properties</span>
+                  <List className="dd-menu">
+                    <ListItem>
+                      <ListItemButton>
+                        <Link to="/property/residential">Residential</Link>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton>
+                        <Link to="/property/commercial">Commercial</Link>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton>
+                        <Link to="/property/builders">Builders</Link>
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
+                </Button>
+              </NavLink>
+              {/* <NavLink
                 className={({ isActive }) => (isActive ? 'activated' : '')}
                 to="/property/residential"
               >
@@ -85,7 +108,7 @@ const Header = () => {
                 <Button className={`header-menu-btn`} variant="text">
                   Commercial Properties
                 </Button>
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 className={({ isActive }) => (isActive ? 'activated' : '')}
                 to="/contact"
@@ -160,7 +183,7 @@ function Drawer() {
               to={men.path}
             >
               <ListItemButton>
-                <ListItemText  primary={men.name} />
+                <ListItemText primary={men.name} />
               </ListItemButton>
             </NavLink>
           </ListItem>

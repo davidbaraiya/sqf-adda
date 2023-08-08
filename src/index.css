@@ -8,3 +8,46 @@ body {
 .hm-hero-mnu-card {
   display: none;
 }
+
+.dd-link {
+  position: relative;
+}
+
+.dd-link>span {
+  padding: 20px 0;
+  display: inline-block;
+}
+
+.dd-menu {
+  position: absolute !important;
+  top: 100%;
+  left: 50%;
+  width: max-content;
+  box-shadow: 0 0 5px 1px rgb(0 0 0 / 10%);
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+  transform: translateY(20px) translateX(-50%);
+  text-transform: capitalize;
+  visibility: hidden;
+  border-top: 2px solid var(--theme-color);
+}
+
+.dd-menu li {
+  padding: 0;
+  margin-left: 0 !important;
+}
+
+.dd-menu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dd-link:hover .dd-menu {
+  opacity: 1;
+  top: 40px;
+  transform: translateY(0) translateX(-50%);
+  visibility: visible;
+  border-top: 2px solid var(--scnd-color);
+}

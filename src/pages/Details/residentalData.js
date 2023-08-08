@@ -318,77 +318,83 @@ const residentalData = [
   },
   {
     id: 9,
-    category: 'residential',
     name: 'M3M cullinan',
-    projectName: 'M3M cullinan',
     thumbnail: m3m_content_thumb,
-    images: [m3m_content_1, m3m_content_2, m3m_content_3],
-    title: [
-      'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
-      'Explore M3M The Cullinan- Sector 94, Noida',
-    ],
-    discription: [
-      'M3M, the leading real estate developer, has announced its latest residential property project in Noida sector 94. The project is spread over 12.858 acres of land and offers world-class amenities and facilities. The residential project comprises luxurious apartments ranging from 3.5,4.5 & 5.5 BHK. The apartments are designed with contemporary architecture and offer stunning views of the city. The project also includes a range of amenities such as a clubhouse, gymnasium, swimming pool, jogging track, and landscaped gardens.',
-    ],
-
-    priceList: [
+    data: [
       {
-        type: '3.5 BHK Apartments',
-        size: '3200 Sq. Ft.',
-        price: '₹5.85 Cr* Onwards',
-      },
-      {
-        type: '4.5 BHK Apartments',
-        size: '4200 Sq. Ft.',
-        price: '₹7.76 Cr* Onwards',
-      },
-      {
-        type: '5.5 BHK Apartments',
-        size: '5800 Sq. Ft.',
-        price: '₹10.72 Cr* Onwards',
-      },
-    ],
+        subId: 1,
+        category: 'residential',
+        projectName: 'M3M cullinan',
+        thumbnail: m3m_content_thumb,
+        images: [m3m_content_1, m3m_content_2, m3m_content_3],
+        title: [
+          'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+          'Explore M3M The Cullinan- Sector 94, Noida',
+        ],
+        discription: [
+          'M3M, the leading real estate developer, has announced its latest residential property project in Noida sector 94. The project is spread over 12.858 acres of land and offers world-class amenities and facilities. The residential project comprises luxurious apartments ranging from 3.5,4.5 & 5.5 BHK. The apartments are designed with contemporary architecture and offer stunning views of the city. The project also includes a range of amenities such as a clubhouse, gymnasium, swimming pool, jogging track, and landscaped gardens.',
+        ],
 
-    amenities: [
-      'GYMNASIUM',
-      'CLUB HOUSE',
-      'SWIMMING POOL',
-      'JOGGING TRACK',
-      'LANDSCAPED GARDENS',
-      'HIGH-STREET RETAIL SHOPS',
-      'MINI MULTIPLEX',
-      'FOOD COURT',
-    ],
+        priceList: [
+          {
+            type: '3.5 BHK Apartments',
+            size: '3200 Sq. Ft.',
+            price: '₹5.85 Cr* Onwards',
+          },
+          {
+            type: '4.5 BHK Apartments',
+            size: '4200 Sq. Ft.',
+            price: '₹7.76 Cr* Onwards',
+          },
+          {
+            type: '5.5 BHK Apartments',
+            size: '5800 Sq. Ft.',
+            price: '₹10.72 Cr* Onwards',
+          },
+        ],
 
-    highlights: [
-      'Easy Connectivity to Major Locations in Noida and Delhi',
-      'Close Proximity to Metro Station, Bus Stop, and Major Highways',
-      'Wide Range of Amenities and Facilities',
-      'Designed with Contemporary Architecture and Stunning Views of the City',
-      'Seamless Shopping Experience for Customers',
-      'Entertainment and Dining Options for Visitors',
-      '24/7 Security and Power Backup for Safety and Comfort',
+        amenities: [
+          'GYMNASIUM',
+          'CLUB HOUSE',
+          'SWIMMING POOL',
+          'JOGGING TRACK',
+          'LANDSCAPED GARDENS',
+          'HIGH-STREET RETAIL SHOPS',
+          'MINI MULTIPLEX',
+          'FOOD COURT',
+        ],
+
+        highlights: [
+          'Easy Connectivity to Major Locations in Noida and Delhi',
+          'Close Proximity to Metro Station, Bus Stop, and Major Highways',
+          'Wide Range of Amenities and Facilities',
+          'Designed with Contemporary Architecture and Stunning Views of the City',
+          'Seamless Shopping Experience for Customers',
+          'Entertainment and Dining Options for Visitors',
+          '24/7 Security and Power Backup for Safety and Comfort',
+        ],
+        locationAdvantage: {
+          connectivity: [
+            'Noida, Greater Noida Expressway - 5 mins* Drive',
+            'Sector 18 Market - 10 mins* Drive',
+            '0 km from Delhi',
+            'Akshardham Temple - 20 mins* Drive',
+            'Nearest Metro: Okhla Bird Sanctuary',
+            'IT companies nearby',
+            'Indira Gandhi International Airport - 45 mins* Drive',
+          ],
+        },
+        monsoonOffer: true,
+        developer: {
+          name: 'M3M stands',
+          description:
+            'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
+        },
+      },
     ],
-    locationAdvantage: {
-      connectivity: [
-        'Noida, Greater Noida Expressway - 5 mins* Drive',
-        'Sector 18 Market - 10 mins* Drive',
-        '0 km from Delhi',
-        'Akshardham Temple - 20 mins* Drive',
-        'Nearest Metro: Okhla Bird Sanctuary',
-        'IT companies nearby',
-        'Indira Gandhi International Airport - 45 mins* Drive',
-      ],
-    },
-    monsoonOffer: true,
-    developer: {
-      name: 'M3M stands',
-      description:
-        'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
-    },
   },
   {
-    id: 11,
+    id: 10,
     category: 'residential',
     name: 'Godrej 146',
     projectName: 'Godrej 146',
