@@ -5,7 +5,7 @@ import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
 
 const BuilderCard = ({ builderData }) => {
-  const { name, id, thumbnail, data } = builderData
+  const { builderName, id, thumbnail, data } = builderData
 
   return (
     <BuilderCardStyle className="builder-card">
@@ -15,7 +15,7 @@ const BuilderCard = ({ builderData }) => {
             <img src={thumbnail} alt={'img'} />
           </div>
           <Typography className="title" variant="h6">
-            {name}
+            {builderName}
           </Typography>
           <Link
             to={

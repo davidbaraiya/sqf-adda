@@ -26,7 +26,7 @@ const BuilderDetails = () => {
     <Box className="pb">
       <BreadCrumbs BreadCrumbsData={BreadCrumbsData} />
       <Container>
-        <BuilderContainer>
+        <BuilderContainer className="pt">
           {subData.map(item => (
             <div key={item.subId} className="builder-detail-card builder-card">
               <Fade up>

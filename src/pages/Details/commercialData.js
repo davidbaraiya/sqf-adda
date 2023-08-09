@@ -69,57 +69,62 @@ const commercialData = [
   },
   {
     id: 7,
-    category: 'commercial',
-    name: 'Sky Bhutani ',
-    projectName: 'Sky Bhutani ',
+    name: 'Sky Bhutani',
+    builderName: 'Bhutani Infra',
     thumbnail: sky_bhutan_thumb,
-    title: [
-      'Welcome to Squarefoot Adda - Your Ultimate Real Estate Consultancy',
-      'Introducing Sky Bhutani - Lounge and Nightclub: Where Luxury Meets Excellence',
+    data: [
+      {
+        subId: 1,
+        projectName: 'Sky Bhutani',
+        category: 'commercial',
+        thumbnail: sky_bhutan_thumb,
+        title: [
+          'Welcome to Squarefoot Adda - Your Ultimate Real Estate Consultancy',
+          'Introducing Sky Bhutani - Lounge and Nightclub: Where Luxury Meets Excellence',
+        ],
+        discription: [
+          'Sky Bhutani is a masterpiece of exquisite architecture and interior design, setting the stage for the grandest levels of luxury and the highest standards of service. As part of the best commercial property in Noida, this lounge and nightclub also presents an incredible investment opportunity.',
+          "Situated on the top floor of Alphathum, one of the tallest commercial towers in Noida, Sky Bhutani offers a mesmerizing view of Noida's skyline. The allure of this ultra-luxurious establishment is further enhanced by its one-of-a-kind infinity pool. As night falls, the pool transforms into a captivating sight with its splendid ambiance and dazzling lights. Sky Bhutani provides connoisseurs of fine dining with a unique opportunity to indulge in culinary excellence and tantalize their taste buds.",
+        ],
+        features: [
+          "India's Most Efficient Business Towers: Sky Bhutani is part of a prestigious commercial property known for its efficiency and business prominence.",
+          "Largest Rooftop Infinity Pool: Enjoy the luxury of one of India's largest rooftop infinity pools, offering a remarkable and unmatched experience.",
+          'Sky Gardens and Breakout Areas: Designed with sky gardens and breakout areas, Sky Bhutani creates a harmonious and refreshing environment.',
+          'Climatically Responsive Architecture: Experience the advantages of climatically responsive architecture, ensuring optimal comfort and sustainability.',
+          'Automated Building Management System: An advanced Building Management System with HVAC technology reduces energy consumption and enhances efficiency.',
+          'Ultra-Modern Building: Sky Bhutani features an ultra-modern building design with high-speed lifts, reflecting the epitome of sophistication.',
+          'Walkways and Inter-Building Connectivity: Convenient walkways within the building and excellent inter-building connectivity contribute to seamless accessibility.',
+          'Automated Car Parking System: Enjoy the convenience of an automated car parking system, providing hassle-free parking for guests and patrons.',
+        ],
+      },
+      {
+        subId: 2,
+        projectName: 'Avenue 62',
+        category: 'commercial',
+        thumbnail: ats_thumb,
+        title: [
+          "Welcome to 62 Avenue, a landmark development that's not just about the products or services you find, but the experiences you create. This is retail for the future, and it's ready for you to explore.",
+          'Discover the Future of Retail and Business with 62 Avenue',
+        ],
+        discription: [
+          '62 Avenue is a project by Bhutani Group, a renowned name in the real estate industry. With a portfolio that includes successful projects like Techno Park, Alphathum, and The I-THUM, Bhutani Group has a proven track record of delivering world-class commercial spaces.',
+        ],
+        deliveredProjects: [
+          'Techno Park, Noida: A commercial development equipped with all the amenities to facilitate the needs of office people.',
+          'Alphathum, Sector 90, Noida: Offering one of the largest infinity pools in India, Alphathum lays the ground for efficient and smart office spaces.',
+          'The I-THUM, Sector 62, Noida: A landmark development and the future of IT Parks in Noida. It offers Commercial Office Spaces and shares the campus of the Corenthum including some leading banks.',
+          'World Square Mall, Sector - 127, Noida: One of the leading malls in Ghaziabad with a multiplex, banquet, and a 3 Star Hotel.',
+        ],
+        ongoingProjects: [
+          'Parmesh Complex, Nirman Vihar',
+          'Parmesh Corporate Tower, Karkardooma',
+          'Cyberthum, Sector - 140A, Noida: Part of a 26.8 acres mixed-use development, Cyberthum is NCR’s tallest commercial tower with world-class spaces, mall in the sky, and Bolt, one of India’s biggest gaming and entertainment centers.',
+          'City Center 150, Sector - 150, Noida: A glimpse into the future of retail and lifestyle entertainment. With al-fresco style high-street retail in a low-rise development, the project is built to immerse visitors in a world of seamless convenience.',
+        ],
+        investmentOpportunity:
+          'Investments are subject to market risks. Read the offer document carefully before investing. The pictures and details are tentative depictions only. Mentioned features are indicative and are subject to change without any prior notice as may be decided by the company or competent authority.',
+      },
     ],
-    discription: [
-      'Sky Bhutani is a masterpiece of exquisite architecture and interior design, setting the stage for the grandest levels of luxury and the highest standards of service. As part of the best commercial property in Noida, this lounge and nightclub also presents an incredible investment opportunity.',
-      "Situated on the top floor of Alphathum, one of the tallest commercial towers in Noida, Sky Bhutani offers a mesmerizing view of Noida's skyline. The allure of this ultra-luxurious establishment is further enhanced by its one-of-a-kind infinity pool. As night falls, the pool transforms into a captivating sight with its splendid ambiance and dazzling lights. Sky Bhutani provides connoisseurs of fine dining with a unique opportunity to indulge in culinary excellence and tantalize their taste buds.",
-    ],
-    features: [
-      "India's Most Efficient Business Towers: Sky Bhutani is part of a prestigious commercial property known for its efficiency and business prominence.",
-      "Largest Rooftop Infinity Pool: Enjoy the luxury of one of India's largest rooftop infinity pools, offering a remarkable and unmatched experience.",
-      'Sky Gardens and Breakout Areas: Designed with sky gardens and breakout areas, Sky Bhutani creates a harmonious and refreshing environment.',
-      'Climatically Responsive Architecture: Experience the advantages of climatically responsive architecture, ensuring optimal comfort and sustainability.',
-      'Automated Building Management System: An advanced Building Management System with HVAC technology reduces energy consumption and enhances efficiency.',
-      'Ultra-Modern Building: Sky Bhutani features an ultra-modern building design with high-speed lifts, reflecting the epitome of sophistication.',
-      'Walkways and Inter-Building Connectivity: Convenient walkways within the building and excellent inter-building connectivity contribute to seamless accessibility.',
-      'Automated Car Parking System: Enjoy the convenience of an automated car parking system, providing hassle-free parking for guests and patrons.',
-    ],
-  },
-  {
-    id: 8,
-    category: 'commercial',
-    name: 'Avenue 62',
-    projectName: 'Avenue 62',
-    thumbnail: ats_thumb,
-    title: [
-      "Welcome to 62 Avenue, a landmark development that's not just about the products or services you find, but the experiences you create. This is retail for the future, and it's ready for you to explore.",
-      'Discover the Future of Retail and Business with 62 Avenue',
-    ],
-    discription: [
-      '62 Avenue is a project by Bhutani Group, a renowned name in the real estate industry. With a portfolio that includes successful projects like Techno Park, Alphathum, and The I-THUM, Bhutani Group has a proven track record of delivering world-class commercial spaces.',
-    ],
-    deliveredProjects: [
-      'Techno Park, Noida: A commercial development equipped with all the amenities to facilitate the needs of office people.',
-      'Alphathum, Sector 90, Noida: Offering one of the largest infinity pools in India, Alphathum lays the ground for efficient and smart office spaces.',
-      'The I-THUM, Sector 62, Noida: A landmark development and the future of IT Parks in Noida. It offers Commercial Office Spaces and shares the campus of the Corenthum including some leading banks.',
-      'World Square Mall, Sector - 127, Noida: One of the leading malls in Ghaziabad with a multiplex, banquet, and a 3 Star Hotel.',
-    ],
-    ongoingProjects: [
-      'Parmesh Complex, Nirman Vihar',
-      'Parmesh Corporate Tower, Karkardooma',
-      'Cyberthum, Sector - 140A, Noida: Part of a 26.8 acres mixed-use development, Cyberthum is NCR’s tallest commercial tower with world-class spaces, mall in the sky, and Bolt, one of India’s biggest gaming and entertainment centers.',
-      'City Center 150, Sector - 150, Noida: A glimpse into the future of retail and lifestyle entertainment. With al-fresco style high-street retail in a low-rise development, the project is built to immerse visitors in a world of seamless convenience.',
-    ],
-
-    investmentOpportunity:
-      'Investments are subject to market risks. Read the offer document carefully before investing. The pictures and details are tentative depictions only. Mentioned features are indicative and are subject to change without any prior notice as may be decided by the company or competent authority.',
   },
   {
     id: 9,

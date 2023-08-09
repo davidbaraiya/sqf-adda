@@ -10,6 +10,7 @@ import iphone from '../../../assets/images/property/M3M-content/iphone.png'
 import macbook from '../../../assets/images/property/M3M-content/macbook.png'
 import tv from '../../../assets/images/property/M3M-content/tv.png'
 import voucher from '../../../assets/images/property/M3M-content/voucher.png'
+import ipad from '../../../assets/images/property/M3M-content/ipad.jpg'
 
 const PropertySubDetails = () => {
   const [viewDetails, setViewDetails] = useState(null)
@@ -49,6 +50,7 @@ const PropertySubDetails = () => {
     images,
     title,
     monsoonOffer,
+    CommercialMonsoonOffer,
   } = viewDetails
 
   return (
@@ -144,29 +146,36 @@ const PropertySubDetails = () => {
                 </Typography>
                 <Grid container spacing={2}>
                   <Grid item xs={12} sm={6}>
-                    <Typography
-                      mb={3}
-                      variant="h5"
-                      className="sub-heading"
-                      color={'#ff5a3c'}
-                    >
-                      Indoor Amenities:
-                    </Typography>
-                    {amenities.indoor?.map((indoor, i) => (
-                      <Fade bottom key={i}>
-                        <Typography mt={1}>{`${i + 1}. ${indoor}`}</Typography>
-                      </Fade>
-                    ))}
+                    {amenities.indoor && (
+                      <Typography
+                        mb={3}
+                        variant="h5"
+                        className="sub-heading"
+                        color={'#ff5a3c'}
+                      >
+                        Indoor Amenities:
+                      </Typography>
+                    )}
+                    {amenities.indoor ||
+                      amenities?.map((indoor, i) => (
+                        <Fade bottom key={i}>
+                          <Typography mt={1}>
+                            {`${i + 1}. ${indoor}`}
+                          </Typography>
+                        </Fade>
+                      ))}
                   </Grid>
                   <Grid item xs={12} sm={6}>
-                    <Typography
-                      mb={3}
-                      variant="h5"
-                      className="sub-heading"
-                      color={'#ff5a3c'}
-                    >
-                      Outdoor Amenities:
-                    </Typography>
+                    {amenities.indoor && (
+                      <Typography
+                        mb={3}
+                        variant="h5"
+                        className="sub-heading"
+                        color={'#ff5a3c'}
+                      >
+                        Outdoor Amenities:
+                      </Typography>
+                    )}
                     {amenities.outdoor?.map((outdoor, i) => (
                       <Fade bottom key={i}>
                         <Typography mt={1}>{`${i + 1}. ${outdoor}`}</Typography>
@@ -286,7 +295,7 @@ const PropertySubDetails = () => {
                   </Grid>
                 </Grid>
               </Box>
-            </Container>    
+            </Container>
             <Box
               sx={{ marginTop: { xs: '40px', sm: '80px' } }}
               className="bottom-div"
@@ -322,6 +331,166 @@ const PropertySubDetails = () => {
                   <Typography variant="h5" className="title">
                     Additional Customer Benefit Options
                   </Typography>
+                  <Grid container spacing={2} className="benefit-container">
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={iphone} alt="i phone" />
+                        </div>
+                        <Typography className="name">IPHONE 14 PRO</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={macbook} alt="macbook" />
+                        </div>
+                        <Typography className="name">MACBOOK AIR 2</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={tv} alt="tv" />
+                        </div>
+                        <Typography className="name">65” LED TV</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={voucher} alt="voucher" />
+                        </div>
+                        <Typography className="name">
+                          MMT VOUCHER WORTH 1.5 LACS
+                        </Typography>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </Box>
+              </Container>
+            </Box>
+          </section>
+        )}
+        {CommercialMonsoonOffer && (
+          <section className="monsoon-offer-sec pt">
+            <Container>
+              <Typography
+                mb={3}
+                variant="h4"
+                className="heading"
+                color={'#ff5a3c'}
+              >
+                The Great Monsoon sale Offer:
+              </Typography>
+              <Box
+                className="top-div"
+                sx={{ marginTop: { xs: '60px', md: '80px' } }}
+              >
+                <Grid container alignItems={'center'} spacing={2}>
+                  <Grid item xs={12} sm={6}>
+                    <div className="left-side">
+                      <img
+                        src={monsoon_logo}
+                        className="offer-logo"
+                        alt="offer logo"
+                      />
+                    </div>
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <div className="right-side">
+                      <div className="price-div">
+                        <Typography variant="h4">
+                          Introducing New Price
+                        </Typography>
+                        <span className="price"> &#8377; 19,490 pr sq ft </span>
+                      </div>
+                      <div className="payment-plan">
+                        <Typography variant="h4">
+                          Presenting Payment Plan
+                        </Typography>
+                        <span>40:60</span>
+                      </div>
+                    </div>
+                  </Grid>
+                </Grid>
+              </Box>
+            </Container>
+            <Box
+              sx={{ marginTop: { xs: '40px', sm: '80px' } }}
+              className="bottom-div"
+              style={{
+                background: `linear-gradient( #000000a3 , #000000a3), url(${m3m_content_3})`,
+              }}
+            >
+              <Container>
+                <Typography variant="h5" className="title">
+                  Get Rentals @ 9% p.a.
+                </Typography>
+                <Grid container alignItems={'center'} spacing={2}>
+                  <Grid item xs={12} sm={6}>
+                    <div className="left-side">
+                      <ul>
+                        <li>10% NOW</li>
+                        <li>30% IN 30 DAY</li>
+                        <li>50% ON SUBMISSION OF OC</li>
+                        <li>10% ON POSSESION</li>
+                      </ul>
+                    </div>
+                  </Grid>
+                </Grid>
+                <Box sx={{ marginTop: { xs: '40px', sm: '80px' } }}>
+                  <Typography variant="h5" className="title">
+                    Additional Customer Benefit Options
+                  </Typography>
+                  <Typography variant="h6">&lt;1 CR- 5 GMS GOLD</Typography>
+                  <Typography variant="h6"> 1-3 CR- 10 GMS GOLD</Typography>
+                  <Grid container spacing={2} className="benefit-container">
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={ipad} alt="i phone" />
+                        </div>
+                        <Typography className="name">IPAD</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={tv} alt="tv" />
+                        </div>
+                        <Typography className="name">42” LED TV</Typography>
+                      </div>
+                    </Grid>
+                  </Grid>
+                  <Typography variant="h6"> 3-5 CR- 15 GMS GOLD</Typography>
+                  <Grid container spacing={2} className="benefit-container">
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={iphone} alt="i phone" />
+                        </div>
+                        <Typography className="name">IPHONE 14</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={macbook} alt="macbook" />
+                        </div>
+                        <Typography className="name">MACBOOK PRO</Typography>
+                      </div>
+                    </Grid>
+                    <Grid item xs={6} sm={4} md={4} lg={3}>
+                      <div className="benefit-div">
+                        <div className="img-wrapper">
+                          <img src={tv} alt="tv" />
+                        </div>
+                        <Typography className="name">42” LED TV</Typography>
+                      </div>
+                    </Grid>
+                  </Grid>
+                  <Typography variant="h6"> &gt;5 CR- 20 GMS GOLD</Typography>
                   <Grid container spacing={2} className="benefit-container">
                     <Grid item xs={6} sm={4} md={4} lg={3}>
                       <div className="benefit-div">
