@@ -85,6 +85,13 @@
   text-transform: none !important;
   color: var(--wh-color) !important;
   background-color: var(--scnd-color) !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 3px !important;
+}
+
+.more-details-btn:hover {
+  background-color: #fa3815 !important;
+
 }
 
 .hdr-appbar-menu {

@@ -47,6 +47,11 @@ const BuilderCardStyle = styled.div`
     flex-direction: column;
     align-items: flex-start;
     border-bottom: 1px solid #ff5a3c;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 20px 1px rgb(0 0 0 / 20%);
+    }
 
     .more-details-btn {
       text-decoration: none !important;
