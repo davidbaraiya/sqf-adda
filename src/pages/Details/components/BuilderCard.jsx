@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { Typography } from '@mui/material'
 import React from 'react'
+import { Fade } from 'react-reveal'
 import { Link } from 'react-router-dom'
 
 const BuilderCard = ({ builderData }) => {
@@ -9,22 +10,24 @@ const BuilderCard = ({ builderData }) => {
   return (
     <BuilderCardStyle className="builder-card">
       <div className="builder-card-inner">
-        <div className="img-wrapper">
-          <img src={thumbnail} alt={'img'} />
-        </div>
-        <Typography className="title" variant="h6">
-          {name}
-        </Typography>
-        <Link
-          to={
-            data
-              ? `/property/builder_details/${id}`
-              : `/residential/property_details/${id}`
-          }
-          className="more-details-btn"
-        >
-          <Typography>More Details</Typography>
-        </Link>
+        <Fade up cascade>
+          <div className="img-wrapper">
+            <img src={thumbnail} alt={'img'} />
+          </div>
+          <Typography className="title" variant="h6">
+            {name}
+          </Typography>
+          <Link
+            to={
+              data
+                ? `/property/builder_details/${id}`
+                : `/residential/property_details/${id}`
+            }
+            className="more-details-btn"
+          >
+            <Typography>More Details</Typography>
+          </Link>
+        </Fade>
       </div>
     </BuilderCardStyle>
   )

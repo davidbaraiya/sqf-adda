@@ -3,7 +3,7 @@ import './bestLuxuryResidential.css'
 import { Container, Typography } from '@mui/material'
 import BreadCrumbs from '../../components/BreadCrumbs'
 import LuxuryCard from './LuxuryCard'
-import luxuryResidentialData from './LuxuryResidentialData'
+import luxuryResidentialData from './luxuryResidentialData'
 
 const BestLuxuryResidential = () => {
   useEffect(() => {

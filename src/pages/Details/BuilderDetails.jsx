@@ -4,6 +4,7 @@ import { Box, Container, Typography } from '@mui/material'
 import { Link, useParams } from 'react-router-dom'
 import propertyData from './propertyData'
 import styled from '@emotion/styled'
+import { Fade } from 'react-reveal'
 
 const BuilderDetails = () => {
   const { id: routeId } = useParams()
@@ -28,19 +29,21 @@ const BuilderDetails = () => {
         <BuilderContainer>
           {subData.map(item => (
             <div key={item.subId} className="builder-detail-card builder-card">
-              <div className="img-wrapper">
-                <Typography className="label">{`${item.category} Property`}</Typography>
-                <img src={item.thumbnail} alt="" />
-              </div>
-              <div className="right-side">
-                <h2>{item.projectName}</h2>
-                <Link
-                  className="more-details-btn"
-                  to={`/residential/property_details/${routeId}/${item.subId}`}
-                >
-                  <Typography> More Details </Typography>
-                </Link>
-              </div>
+              <Fade up>
+                <div className="img-wrapper">
+                  <Typography className="label">{`${item.category} Property`}</Typography>
+                  <img src={item.thumbnail} alt="" />
+                </div>
+                <div className="right-side">
+                  <h2>{item.projectName}</h2>
+                  <Link
+                    className="more-details-btn"
+                    to={`/residential/property_details/${routeId}/${item.subId}`}
+                  >
+                    <Typography> More Details </Typography>
+                  </Link>
+                </div>
+              </Fade>
             </div>
           ))}
         </BuilderContainer>
