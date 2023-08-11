@@ -293,6 +293,17 @@ li {
   margin-top: 15px;
 }
 
+.priceCard {
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%) !important;
+  border: 1px solid rgb(0 0 0 / 14%);
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+
+}
+
 @media (max-width :991px) {
   .pt {
     padding-top: 40px;

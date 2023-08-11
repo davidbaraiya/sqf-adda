@@ -427,7 +427,7 @@ const PropertyDetails = () => {
               sx={{ marginTop: { xs: '40px', sm: '80px' } }}
               className="bottom-div"
               style={{
-                backgroundImage: `linear-gradient( #000000a3 , #000000a3), url(${m3m_content_3})`,
+                backgroundImage: `linear-gradient( #000000a3 , #000000a3), url(${m3m_content_3}) no-repeat`,
               }}
             >
               <Container>
@@ -547,7 +547,7 @@ const PropertyDetails = () => {
               sx={{ marginTop: { xs: '40px', sm: '80px' } }}
               className="bottom-div"
               style={{
-                background: `linear-gradient( #000000a3 , #000000a3), url(${m3m_content_3})`,
+                backgroundImage: `linear-gradient( #000000a3 , #000000a3), url(${m3m_content_3})no-repeat`,
               }}
             >
               <Container>

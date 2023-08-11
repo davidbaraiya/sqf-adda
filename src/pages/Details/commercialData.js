@@ -9,6 +9,11 @@ import m3m_content_2 from '../../assets/images/property/M3M-content/m3m-content-
 import m3m_content_3 from '../../assets/images/property/M3M-content/m3m-content-3.webp'
 import m3m_content_4 from '../../assets/images/property/M3M-content/m3m-content-4.webp'
 import m3m_content_5 from '../../assets/images/property/M3M-content/m3m-content-5.webp'
+import m3m_jewel_thumb from '../../assets/images/property/m3m-jewel/thumbnail.jpg'
+import m3m_jewel_1 from '../../assets/images/property/m3m-jewel/m3m-jewel1.jpg'
+import m3m_jewel_2 from '../../assets/images/property/m3m-jewel/m3m-jewel2.jpg'
+import M3M_avenue_thumb from '../../assets/images/property/M3M-65th-Avenue/thumbnail.jpg'
+import artistic_Impression_img from '../../assets/images/property/M3M-65th-Avenue/artistic-Impression.jpg'
 
 const commercialData = [
   {
@@ -128,7 +133,7 @@ const commercialData = [
   },
   {
     id: 9,
-    name: 'M3M cullinan',
+    name: 'M3M',
     thumbnail: m3m_content_thumb,
     data: [
       {
@@ -211,6 +216,100 @@ const commercialData = [
           description:
             'M3M stands for Magnificent and groundbreaking ideas that keep them out of the crowd. Diversified group of professionals works dedicated and offer best quality material with advanced technology for the better lifestyle and with the complete security system, which undoubtedly offers best and lucrative return in the future.And the company has created the eye opening position in the real estate sector and serve more than what the buyers deserve.',
         },
+      },
+      {
+        subId: 3,
+        category: 'commercial',
+        projectName: 'M3M Jewel',
+        thumbnail: m3m_jewel_thumb,
+        images: [m3m_jewel_1, m3m_jewel_2],
+        title: [
+          'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+          'Explore M3M Jewel - Sector 25 MG Road Gurugram',
+        ],
+        discription: [
+          'M3M Jewel is truly a retail masterpiece that has iconic advantages that surpass any other project. Strategically located on sector 25, the project will host premium luxury retail brands, scrumptious cuisines and high-end cinematic experiences. The project surpasses all existing structures in terms of biophilic designing, impressive facades and elevations, premium appearance, and most entertaining retail experiences. It is truly a sparkler!',
+        ],
+        extraDiscription: [
+          'The Jewel - Standing tall like its name, M&M Jewel will personify the essence of being a jewel to the Mall Mile of Gurugram - MG Road',
+          'Entrance - Designed with keeping all the aspects like ease of moving, contemporary design, the larger than life entrance is set to thrill the first engagement to the arena',
+          'Landscape - Mini greens at M3M Jewel will be a rare green sight in the overall landscape of sector 25',
+          'Interior Experience - Inviting Store designs, appearance of brands behind the impressive façade is all set to leave a mark on every visitor',
+        ],
+
+        priceList: [
+          {
+            type: 'Type 1',
+            size: '1.32 Acres(5344.61 sq. mts.)',
+            numberOfStoreys: 'G+8',
+            height: '40 M',
+            noOfBasements: '3 Basements',
+          },
+        ],
+
+        highlights: [
+          'Best Suited for Flagship stores of International brands',
+          'Impeccable mix of luxury retail and F&B',
+          "NCR's first Hybrid model retail destination",
+          'State of the art design and tenant mix',
+          'Perfect location from all aspects',
+          'Seamless Vertical and Horizontal connectivity',
+          '5 Screen Multiplex for a grand cinematic experience',
+        ],
+        locationAdvantage: {
+          connectivity: [
+            '50+ Premium Residences',
+            '100+ Corporates Around',
+            '2 Mins to Cybercity',
+            'A Step Away from MG Road Metro',
+            '15 Mins to IGI Airport',
+          ],
+        },
+
+        // CommercialMonsoonOffer: true,
+        MonsoonOffer: false,
+        contsructionUpdate: 'https://www.youtube.com/embed/SxfYwEANa48',
+      },
+      {
+        subId: 4,
+        category: 'commercial',
+        projectName: 'M3M 65th Avenue',
+        thumbnail: M3M_avenue_thumb,
+        images: [M3M_avenue_thumb, M3M_avenue_thumb],
+        title: [
+          'Welcome to Squarefoot Adda - Your Gateway to Luxurious Living!',
+          'Explore M3M Jewel - Sector 65 Gurugram',
+        ],
+        discription: [
+          "M3M Route 65 is Gurugram’s next big fashion & food destination, located in Sector - 65 of Gurugram, the emerging retail capital of India. It is set to become the most premium and luxurious high street in the area and will feature retail units, anchor shops, hypermarkets, F&B-enabled shops, and kids' play zones for cherishing moments of a lifetime! The futuristic design of this project with a massive HNI catchment of over 50,000 and the robust infrastructure ensures that you can enjoy all that this project has to offer, making it stand out among other projects in India.",
+        ],
+
+        highlights: [
+          'Landscaped plaza',
+          'Spread across 4 acres',
+          'Open-to-sky courtyards',
+          'Anchor Stores at 3 Levels',
+          'Strategically planned multiple accesses',
+          'Glass façade on both sides giving visibility',
+          'Exquisite open dining avenues on the terrace level',
+          'Premium residences in the vicinity with high catchment',
+          'World-class schools include DPS International School and St. Xavier’s High School',
+          'Hospitals like The Medicity, Artemis Hospital, W Pratiksha Hospital within a 5 km radius',
+          'Seamless connectivity through well-appointed elevators, escalators & connecting bridges',
+          'Experience in every segment – Shopping, Food & Beverages, Kids Zone, Anchors / Hypermarket',
+        ],
+
+        // locationAdvantage: {
+        //   connectivity: [
+        //     '50+ Premium Residences',
+        //     '100+ Corporates Around',
+        //     '2 Mins to Cybercity',
+        //     'A Step Away from MG Road Metro',
+        //     '15 Mins to IGI Airport',
+        //   ],
+        // },
+        artisticImpression: artistic_Impression_img,
+        MonsoonOffer: false,
       },
     ],
   },

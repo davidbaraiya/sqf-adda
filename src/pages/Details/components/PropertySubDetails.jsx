@@ -1,5 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Container, Grid, Typography } from '@mui/material'
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Container,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+} from '@mui/material'
 import { useParams } from 'react-router-dom'
 import { Fade } from 'react-reveal'
 import propertyData from '../propertyData'
@@ -46,11 +57,16 @@ const PropertySubDetails = () => {
     highlights,
     amenities,
     nearbyLandmarks,
+    extraDiscription,
     features,
     images,
     title,
+    locationAdvantage,
+    priceList,
     monsoonOffer,
     CommercialMonsoonOffer,
+    contsructionUpdate,
+    artisticImpression,
   } = viewDetails
 
   return (
@@ -99,6 +115,14 @@ const PropertySubDetails = () => {
                     <Typography mt={1}>{para}</Typography>
                   </Fade>
                 ))}
+              <div style={{ marginTop: '30px' }}>
+                {extraDiscription &&
+                  extraDiscription.map((para, i) => (
+                    <Fade bottom key={i}>
+                      <Typography mt={1}>{para}</Typography>
+                    </Fade>
+                  ))}
+              </div>
             </Box>
           </Container>
         </section>
@@ -247,6 +271,155 @@ const PropertySubDetails = () => {
                       </Typography>
                     ))}
                   </ul>
+                </Fade>
+              </Box>
+            </Container>
+          </section>
+        )}
+        {priceList && (
+          <section className="priceList-sec pt pb ">
+            <Container>
+              <Box>
+                <Fade bottom>
+                  <Typography
+                    mb={3}
+                    variant="h4"
+                    className="heading"
+                    color={'#ff5a3c'}
+                  >
+                    priceList of {projectName}:
+                  </Typography>
+
+                  <Grid container spacing={2}>
+                    {priceList?.map(
+                      (
+                        {
+                          type,
+                          size,
+                          price,
+                          floorType,
+                          numberOfStoreys,
+                          height,
+                          noOfBasements,
+                        },
+                        i
+                      ) => (
+                        <Grid item xs={12} sm={6} key={i}>
+                          <Card className="priceCard">
+                            <CardMedia
+                              component="img"
+                              height="194"
+                              image={images[i]}
+                              alt="img"
+                            />
+                            <CardContent>
+                              <Typography variant="h6">
+                                {type ? type : null}
+                              </Typography>
+                              <Typography>
+                                {size && (
+                                  <>
+                                    <b>Size:</b> {size}
+                                  </>
+                                )}
+                              </Typography>
+                              <Typography>
+                                {price && (
+                                  <>
+                                    <b>Price:</b> {price}
+                                  </>
+                                )}
+                              </Typography>
+                              <Typography>
+                                {numberOfStoreys && (
+                                  <>
+                                    <b>Number Of Storeys:</b> {numberOfStoreys}
+                                  </>
+                                )}
+                              </Typography>
+                              <Typography>
+                                {height && (
+                                  <>
+                                    <b>Height:</b> {height}
+                                  </>
+                                )}
+                              </Typography>
+                              <Typography>
+                                {noOfBasements && (
+                                  <>
+                                    <b>No Of Basements:</b> {noOfBasements}
+                                  </>
+                                )}
+                              </Typography>
+                              {floorType && (
+                                <Typography>
+                                  <b> Floor Type:</b> {floorType}
+                                </Typography>
+                              )}
+                            </CardContent>
+                          </Card>
+                        </Grid>
+                      )
+                    )}
+                  </Grid>
+                </Fade>
+              </Box>
+            </Container>
+          </section>
+        )}
+        {locationAdvantage && (
+          <section className="locationAdvantage-sec pt pb bg-gray">
+            <Container>
+              <Box>
+                <Fade bottom>
+                  <Typography
+                    mb={3}
+                    variant="h4"
+                    className="heading"
+                    color={'#ff5a3c'}
+                  >
+                    location Advantage:
+                  </Typography>
+
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} sm={6}>
+                      <List>
+                        {locationAdvantage.connectivity?.map(
+                          (connectivity, i) => (
+                            <ListItem key={i}>
+                              <ListItemText primary={connectivity} />
+                            </ListItem>
+                          )
+                        )}
+                      </List>
+                    </Grid>
+                    {locationAdvantage.nearbyUniversity && (
+                      <Grid item xs={12} sm={6}>
+                        <Typography
+                          mb={1}
+                          variant="h5"
+                          className="sub-heading"
+                          color={'#ff5a3c'}
+                        >
+                          near by University:
+                        </Typography>
+                        <Typography mb={2}>
+                          {locationAdvantage.nearbyUniversity}
+                        </Typography>
+                        <Typography
+                          mb={1}
+                          variant="h5"
+                          className="sub-heading"
+                          color={'#ff5a3c'}
+                        >
+                          shopping
+                        </Typography>
+                        <Typography mb={2}>
+                          {locationAdvantage.shopping}
+                        </Typography>
+                      </Grid>
+                    )}
+                  </Grid>
                 </Fade>
               </Box>
             </Container>
@@ -530,6 +703,60 @@ const PropertySubDetails = () => {
                 </Box>
               </Container>
             </Box>
+          </section>
+        )}
+        {contsructionUpdate && (
+          <section className="pt pb">
+            <Container>
+              <Box>
+                <Fade bottom>
+                  <Typography
+                    mb={3}
+                    variant="h4"
+                    className="heading"
+                    color={'#ff5a3c'}
+                  >
+                    Contsruction Update:
+                  </Typography>
+                </Fade>
+                <iframe
+                  width="90%"
+                  height="450px"
+                  src={contsructionUpdate}
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </Box>
+            </Container>
+          </section>
+        )}
+        {artisticImpression && (
+          <section className="pt pb">
+            <Container>
+              <Box>
+                <Fade bottom>
+                  <Typography
+                    mb={3}
+                    variant="h4"
+                    className="heading"
+                    color={'#ff5a3c'}
+                  >
+                    artistic Impression:
+                  </Typography>
+                </Fade>
+                <div className="img-wrp">
+                  <img
+                    src={artisticImpression}
+                    alt="img"
+                    width={'100%'}
+                    height={'600px'}
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+              </Box>
+            </Container>
           </section>
         )}
         <section className="bg-gray pt pb" style={{ marginBottom: '150px' }}>
