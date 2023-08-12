@@ -1,7 +1,6 @@
 import gulshan2_thumb from '../../assets/images/property/gulshan/gulshan-one/thumbnail.png'
 import ats_thumb from '../../assets/images/property/ats/thumbnail.jpg'
 import jaypee_green_thumb from '../../assets/images/property/jaypee/jaypee-greens/thumbnail.png'
-import jaypee_wish_thumb from '../../assets/images/property/jaypee/wish-town/thumbnail.png'
 import sky_bhutan_thumb from '../../assets/images/property/sky-bhutani/thumbnail.png'
 import m3m_content_thumb from '../../assets/images/property/M3M-content/thumbnail.webp'
 import m3m_content_1 from '../../assets/images/property/M3M-content/m3m-content-1.webp'
@@ -13,7 +12,6 @@ import m3m_jewel_thumb from '../../assets/images/property/m3m-jewel/thumbnail.jp
 import m3m_jewel_1 from '../../assets/images/property/m3m-jewel/m3m-jewel1.jpg'
 import m3m_jewel_2 from '../../assets/images/property/m3m-jewel/m3m-jewel2.jpg'
 import M3M_avenue_thumb from '../../assets/images/property/M3M-65th-Avenue/thumbnail.jpg'
-import artistic_Impression_img from '../../assets/images/property/M3M-65th-Avenue/artistic-Impression.jpg'
 
 const commercialData = [
   {
@@ -299,16 +297,15 @@ const commercialData = [
           'Experience in every segment – Shopping, Food & Beverages, Kids Zone, Anchors / Hypermarket',
         ],
 
-        // locationAdvantage: {
-        //   connectivity: [
-        //     '50+ Premium Residences',
-        //     '100+ Corporates Around',
-        //     '2 Mins to Cybercity',
-        //     'A Step Away from MG Road Metro',
-        //     '15 Mins to IGI Airport',
-        //   ],
-        // },
-        artisticImpression: artistic_Impression_img,
+        locationAdvantage: {
+          connectivity: [
+            '50+ Premium Residences',
+            '100+ Corporates Around',
+            '2 Mins to Cybercity',
+            'A Step Away from MG Road Metro',
+            '15 Mins to IGI Airport',
+          ],
+        },
         MonsoonOffer: false,
       },
     ],

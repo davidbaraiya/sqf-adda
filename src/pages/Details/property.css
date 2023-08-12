@@ -301,8 +301,35 @@ li {
 iframe {
   margin: 0 auto;
   display: block;
-
 }
+
+.plotdata-content li {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: var(--poppins-font);
+  gap: 5px;
+}
+
+.plotdata-content li label {
+  color: #ff5a3c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plotdata-content li p {
+  font-size: 14px !important;
+  font-weight: 500;
+}
+
+.plotdata-sec .img-wrapper {
+  padding-top: 50% !important;
+}
+
+
 
 @media (max-width :991px) {
   .pt {
@@ -395,6 +422,10 @@ iframe {
   .builder-card {
     flex: 0 1 100%;
     width: 100%;
+  }
+
+  .plotdata-content li {
+    margin-left: 0 !important;
   }
 }
 

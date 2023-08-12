@@ -30,7 +30,6 @@ import m3m_jewel_thumb from '../../assets/images/property/m3m-jewel/thumbnail.jp
 import m3m_jewel_1 from '../../assets/images/property/m3m-jewel/m3m-jewel1.jpg'
 import m3m_jewel_2 from '../../assets/images/property/m3m-jewel/m3m-jewel2.jpg'
 import M3M_avenue_thumb from '../../assets/images/property/M3M-65th-Avenue/thumbnail.jpg'
-import artistic_Impression_img from '../../assets/images/property/M3M-65th-Avenue/artistic-Impression.jpg'
 
 const propertyData = [
   {
@@ -590,17 +589,28 @@ const propertyData = [
           'Landscape - Mini greens at M3M Jewel will be a rare green sight in the overall landscape of sector 25',
           'Interior Experience - Inviting Store designs, appearance of brands behind the impressive façade is all set to leave a mark on every visitor',
         ],
-
-        priceList: [
+        plotData: [
           {
-            type: 'Type 1',
-            size: '1.32 Acres(5344.61 sq. mts.)',
-            numberOfStoreys: 'G+8',
-            height: '40 M',
-            noOfBasements: '3 Basements',
+            id: 1,
+            label: 'Plot Area',
+            details: '1.32 Acres (5344.61 sq. mts.)',
+          },
+          {
+            id: 2,
+            label: 'Number of Storeys',
+            details: 'G+8',
+          },
+          {
+            id: 3,
+            label: 'Height',
+            details: '40 M',
+          },
+          {
+            id: 4,
+            label: 'Number of Basements',
+            details: '3 Basements',
           },
         ],
-
         highlights: [
           'Best Suited for Flagship stores of International brands',
           'Impeccable mix of luxury retail and F&B',
@@ -653,16 +663,15 @@ const propertyData = [
           'Experience in every segment – Shopping, Food & Beverages, Kids Zone, Anchors / Hypermarket',
         ],
 
-        // locationAdvantage: {
-        //   connectivity: [
-        //     '50+ Premium Residences',
-        //     '100+ Corporates Around',
-        //     '2 Mins to Cybercity',
-        //     'A Step Away from MG Road Metro',
-        //     '15 Mins to IGI Airport',
-        //   ],
-        // },
-        artisticImpression: artistic_Impression_img,
+        locationAdvantage: {
+          connectivity: [
+            '50+ Premium Residences',
+            '100+ Corporates Around',
+            '2 Mins to Cybercity',
+            'A Step Away from MG Road Metro',
+            '15 Mins to IGI Airport',
+          ],
+        },
         MonsoonOffer: false,
       },
     ],

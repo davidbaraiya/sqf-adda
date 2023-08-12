@@ -66,7 +66,7 @@ const PropertySubDetails = () => {
     monsoonOffer,
     CommercialMonsoonOffer,
     contsructionUpdate,
-    artisticImpression,
+    plotData,
   } = viewDetails
 
   return (
@@ -247,6 +247,47 @@ const PropertySubDetails = () => {
                   discover a world where luxury meets tranquility. RERA No.:
                   UPRERAPJ950870
                 </Typography>
+              </Box>
+            </Container>
+          </section>
+        )}
+        {plotData && (
+          <section className="plotdata-sec pt pb ">
+            <Container>
+              <Box>
+                <Fade bottom>
+                  <Typography
+                    mb={3}
+                    variant="h4"
+                    className="heading"
+                    color={'#ff5a3c'}
+                  >
+                    Plot Data:
+                  </Typography>
+                  <Grid container spacing={2} alignItems={'center'}>
+                    <Grid item xs={12} sm={6}>
+                      <Fade bottom>
+                        <div className="img-wrapper">
+                          <img src={images[1]} alt="img" />
+                        </div>
+                      </Fade>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <div className="plotdata-content">
+                        <ul>
+                          <Fade bottom>
+                            {plotData.map(({ label, details, id }) => (
+                              <li key={id}>
+                                <label>{label} :</label>
+                                <Typography>{details}</Typography>
+                              </li>
+                            ))}
+                          </Fade>
+                        </ul>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </Fade>
               </Box>
             </Container>
           </section>
@@ -728,33 +769,6 @@ const PropertySubDetails = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
-              </Box>
-            </Container>
-          </section>
-        )}
-        {artisticImpression && (
-          <section className="pt pb">
-            <Container>
-              <Box>
-                <Fade bottom>
-                  <Typography
-                    mb={3}
-                    variant="h4"
-                    className="heading"
-                    color={'#ff5a3c'}
-                  >
-                    artistic Impression:
-                  </Typography>
-                </Fade>
-                <div className="img-wrp">
-                  <img
-                    src={artisticImpression}
-                    alt="img"
-                    width={'100%'}
-                    height={'600px'}
-                    style={{ objectFit: 'cover' }}
-                  />
-                </div>
               </Box>
             </Container>
           </section>
